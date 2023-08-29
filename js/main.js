@@ -31,7 +31,7 @@ function updateActivity() {
             activityText = "Working hard";
             emoji = "🔥";
         } else if (hour >= 20 && hour < 21) {
-            activityText = "Jiu-Jitsu";
+            activityText = "Learning Jiu-Jitsu";
             emoji = "🥋";
         } else {
             activityText = "Private time";
