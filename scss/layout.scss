@@ -1,0 +1,139 @@
+main {
+
+	// home
+	&.home {
+		background: var(--color-background);
+
+		section {
+
+			// intro
+			&:nth-child(1) {
+				.cell {
+					&:nth-child(1) {
+						grid-column: span 4;
+
+						@media screen and (max-width: 1023px) {
+							grid-column: span 2;
+						}
+					}
+
+					&:nth-child(2) {
+						gap: calc(var(--unit) * .75);
+
+						@media screen and (max-width: 767px) {
+							flex-direction: row;
+							flex-wrap: wrap;
+						}
+					}
+				}
+			}
+
+			// highlights
+			&:nth-child(2) {
+				p {
+					margin-bottom: calc(var(--unit) * 3);
+				}
+
+				.cell {
+					&:nth-last-child(1) {
+						p {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+
+			.cell {
+				grid-column: span 2;
+
+				h3 {
+					margin-bottom: calc(var(--unit) * .25);
+				}
+			}
+
+			picture {
+				grid-column: span 4;
+
+				@media screen and (max-width: 1023px) {
+					grid-column: span 2;
+				}
+			}
+		}
+	}
+
+	// project
+	&.content {
+		background: var(--color-background);
+
+		section {
+
+			p,
+			picture,
+			hr {
+				margin-bottom: calc(var(--unit) * 3);
+			}
+
+			h2 {
+				margin-bottom: calc(var(--unit) * 1);
+			}
+
+			h3 {
+				margin-bottom: calc(var(--unit) * .25);
+			}
+
+			.caption {
+				margin: calc(var(--unit) * .5) 0 0;
+			}
+
+			.cell,
+			.row {
+
+				h1,
+				h2,
+				h3,
+				p,
+				picture,
+				hr {
+					&:nth-last-child(1) {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.cell {
+				grid-column: 2 / span 4;
+
+				@media screen and (max-width: 1023px) {
+					grid-column: 1 / -1;
+					margin: 0 calc(var(--unit) * 4);
+				}
+
+				@media screen and (max-width: 644px) {
+					margin: 0;
+				}
+
+				// navigation
+				&:nth-child(1) {
+					grid-column: span 1;
+					margin-bottom: calc(var(--unit) * 3);
+
+					@media screen and (max-width: 1023px) {
+						grid-column: 1 / -1;
+						margin-right: 0;
+						margin-left: 0;
+					}
+				}
+
+				// title
+				&:nth-child(2) {
+					gap: calc(var(--unit) * .5);
+					margin-bottom: calc(var(--unit) * 3);
+
+					p {
+						opacity: .48;
+					}
+				}
+			}
+		}
+	}
+}
