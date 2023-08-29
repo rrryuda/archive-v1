@@ -122,6 +122,16 @@ main {
 						margin-right: 0;
 						margin-left: 0;
 					}
+
+					a {
+						display: flex;
+						align-items: center;
+						gap: .25rem;
+
+						.material-symbols-sharp {
+							font-size: 20px;
+						}
+					}
 				}
 
 				// title
