@@ -127,6 +127,7 @@ body {
 	&.loading {
 
 		main,
+		.end,
 		#status {
 			opacity: 0;
 		}
@@ -137,6 +138,10 @@ body {
 		main,
 		#status {
 			opacity: 1;
+		}
+
+		.end {
+			opacity: .72;
 		}
 
 		.loader {
