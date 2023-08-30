@@ -123,4 +123,31 @@ body {
 		color: var(--color-select-foreground);
 		background: var(--color-select-background);
 	}
+
+	&.loading {
+		container {
+			opacity: 0;
+		}
+	}
+
+	&.loaded {
+		container {
+			opacity: 1;
+			animation: fadeIn .4s ease-in-out;
+		}
+
+		.loader {
+			display: none;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+	}
 }

@@ -61,4 +61,11 @@ function updateActivity() {
 setInterval(function () {
     updateKoreaTime();
     updateActivity();
+
+    // Check if all resources are loaded
+    if (document.readyState === "complete") {
+        // Remove loading class and add loaded class to body
+        document.body.classList.remove("loading");
+        document.body.classList.add("loaded");
+    }
 }, 1000);

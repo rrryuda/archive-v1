@@ -55,102 +55,124 @@
     <script src="../js/main.js"></script>
 </head>
 
-<body>
+<body class="loading">
 
-    <!-- contents container -->
-    <main class="content">
+    <container>
 
-        <!-- content -->
-        <section>
+        <!-- contents container -->
+        <main class="content">
 
-            <!-- nav -->
-            <div class="cell">
-                <h3><a href="../"><span class="material-symbols-sharp">north_west</span>Back</a>
-                </h3>
-            </div>
+            <!-- content -->
+            <section>
 
-            <!-- title -->
-            <div class="cell">
-                <h1>42dot Maps SDK</h1>
-                <p>2020, 42dot</p>
-            </div>
+                <!-- nav -->
+                <div class="cell">
+                    <h3><a href="../"><span class="material-symbols-sharp">north_west</span>Back</a>
+                    </h3>
+                </div>
 
-            <!-- contents -->
-            <div class="cell">
-                <h3>Overview</h3>
-                <p>The 42dot Maps SDK has been developed by 42dot as a standard map guideline for providing map-based
-                    services. It aims to enhance key content based on different environments and purposes, and is
-                    designed to facilitate integration with various services.</p>
-                <picture><img src="./source/maps-overview.jpg"></picture>
-                <p>I have improved the usability of the existing map while defining a standardized style for the entire
-                    map. Depending on the purpose of our in-house service that provides route and navigation
-                    information, we have planned the presentation of information on the map to be conveyed clearly.</p>
-                <h2>Cartography</h2>
-                <p>The Point of Interest (POI) icons are the most fundamental visual identity elements of the map and
-                    have an extended form in the brand guidelines. They swiftly convey information about terrain and
-                    location at every user interaction with the map, and all POI icons are designed to maintain a
-                    consistent level of representation.</p>
-                <picture><img src="./source/maps-icon.jpg">
-                    <p class="caption">Sprite image</p>
-                </picture>
-                <picture><img src="./source/maps-icon-grid.jpg"></picture>
-                <p>The color system composing the map symbols has been designed as the most perceptually distinct and
-                    functional colors, enabling users to accurately differentiate POI attributes. All colors are applied
-                    at a representation level that does not intrude upon other prominent content on the map,
-                    facilitating increased connectivity with various mobility services through our planning.</p>
-                <picture><img src="./source/maps-style.jpg"></picture>
-                <picture><img src="./source/maps-style.gif"></picture>
-                <p>The key element of the map style, polygons, provides topographical information that surpasses the
-                    mere location data on the map. We have defined the prioritization of displaying information such as
-                    residential areas and educational facility complexes based on usage frequency, aiming to offer a
-                    user-centered map UX by delivering a map experience that revolves around the users.</p>
-                <h2>Navigation UI</h2>
-                <p>In addition to maps, I have defined all visual information used in the navigation GUI. These icons
-                    play a crucial role in route guidance, ensuring quick and clear recognition of essential
-                    information. Furthermore, the neutral visual of the icons maximizes the usability of the UI and
-                    strengthens the brand identity.</p>
-                <picture><img src="./source/maps-navi-icon.jpg">
-                    <p class="caption">TBT icons & route</p>
-                </picture>
-                <picture><img src="./source/maps-ui-01.jpg"></picture>
-                <picture><img src="./source/maps-ui-02.jpg">
-                    <p class="caption">RSI test ver.</p>
-                </picture>
-                <p>To provide users with a consistent design experience across the vehicle infotainment system, I
-                    closely collaborated with the navigation team. As a result of this collaboration, the connected apps
-                    within the infotainment system exhibit distinct specialized usability while maintaining strong
-                    interconnectedness.</p>
-                <h2>Map editor</h2>
-                <p>UMOS Map Studio is a map authoring tool that allows creators to generate and edit map styles, icons,
-                    fonts, and prioritize POIs. It has been designed to provide an intuitive way for creators to
-                    visualize the hierarchy and specifications of all information, enabling them to create and adjust
-                    the map's style effectively.</p>
-                <picture><img src="./source/maps-studio-ui.jpg">
-                    <p class="caption">UMOS map studio</p>
-                </picture>
-            </div>
-            <div class="row">
-                <picture><img src="./source/maps-studio-ui.png"></picture>
-            </div>
-            <div class="cell">
-                <p>All of 42dot's services have been able to actively leverage the creation of standard maps for these
-                    services, as they are all map-based. Collaborating with engineers as needed, I could establish POI
-                    hierarchies tailored to the characteristics of each service and create advanced maps.</p>
-        </section>
+                <!-- title -->
+                <div class="cell">
+                    <h1>42dot Maps SDK</h1>
+                    <p>2020, 42dot</p>
+                </div>
 
-        <!-- copyright -->
-        <section>
-            <div class="row">
-                <p class="copyright">© Seunghyun.</p>
-            </div>
-        </section>
+                <!-- contents -->
+                <div class="cell">
+                    <h3>Overview</h3>
+                    <p>The 42dot Maps SDK has been developed by 42dot as a standard map guideline for providing
+                        map-based
+                        services. It aims to enhance key content based on different environments and purposes, and is
+                        designed to facilitate integration with various services.</p>
+                    <picture><img src="./source/maps-overview.jpg"></picture>
+                    <p>I have improved the usability of the existing map while defining a standardized style for the
+                        entire
+                        map. Depending on the purpose of our in-house service that provides route and navigation
+                        information, we have planned the presentation of information on the map to be conveyed clearly.
+                    </p>
+                    <h2>Cartography</h2>
+                    <p>The Point of Interest (POI) icons are the most fundamental visual identity elements of the map
+                        and
+                        have an extended form in the brand guidelines. They swiftly convey information about terrain and
+                        location at every user interaction with the map, and all POI icons are designed to maintain a
+                        consistent level of representation.</p>
+                    <picture><img src="./source/maps-icon.jpg">
+                        <p class="caption">Sprite image</p>
+                    </picture>
+                    <picture><img src="./source/maps-icon-grid.jpg"></picture>
+                    <p>The color system composing the map symbols has been designed as the most perceptually distinct
+                        and
+                        functional colors, enabling users to accurately differentiate POI attributes. All colors are
+                        applied
+                        at a representation level that does not intrude upon other prominent content on the map,
+                        facilitating increased connectivity with various mobility services through our planning.</p>
+                    <picture><img src="./source/maps-style.jpg"></picture>
+                    <picture><img src="./source/maps-style.gif"></picture>
+                    <p>The key element of the map style, polygons, provides topographical information that surpasses the
+                        mere location data on the map. We have defined the prioritization of displaying information such
+                        as
+                        residential areas and educational facility complexes based on usage frequency, aiming to offer a
+                        user-centered map UX by delivering a map experience that revolves around the users.</p>
+                    <h2>Navigation UI</h2>
+                    <p>In addition to maps, I have defined all visual information used in the navigation GUI. These
+                        icons
+                        play a crucial role in route guidance, ensuring quick and clear recognition of essential
+                        information. Furthermore, the neutral visual of the icons maximizes the usability of the UI and
+                        strengthens the brand identity.</p>
+                    <picture><img src="./source/maps-navi-icon.jpg">
+                        <p class="caption">TBT icons & route</p>
+                    </picture>
+                    <picture><img src="./source/maps-ui-01.jpg"></picture>
+                    <picture><img src="./source/maps-ui-02.jpg">
+                        <p class="caption">RSI test ver.</p>
+                    </picture>
+                    <p>To provide users with a consistent design experience across the vehicle infotainment system, I
+                        closely collaborated with the navigation team. As a result of this collaboration, the connected
+                        apps
+                        within the infotainment system exhibit distinct specialized usability while maintaining strong
+                        interconnectedness.</p>
+                    <h2>Map editor</h2>
+                    <p>UMOS Map Studio is a map authoring tool that allows creators to generate and edit map styles,
+                        icons,
+                        fonts, and prioritize POIs. It has been designed to provide an intuitive way for creators to
+                        visualize the hierarchy and specifications of all information, enabling them to create and
+                        adjust
+                        the map's style effectively.</p>
+                    <picture><img src="./source/maps-studio-ui.jpg">
+                        <p class="caption">UMOS map studio</p>
+                    </picture>
+                </div>
+                <div class="row">
+                    <picture><img src="./source/maps-studio-ui.png"></picture>
+                </div>
+                <div class="cell">
+                    <p>All of 42dot's services have been able to actively leverage the creation of standard maps for
+                        these
+                        services, as they are all map-based. Collaborating with engineers as needed, I could establish
+                        POI
+                        hierarchies tailored to the characteristics of each service and create advanced maps.</p>
+            </section>
 
-    </main>
+            <!-- copyright -->
+            <section>
+                <div class="row">
+                    <p class="copyright">© Seunghyun.</p>
+                </div>
+            </section>
 
-    <!-- status -->
-    <div id="status">
-        <span id="time"></span>
-        <span id="activity"></span>
+        </main>
+
+        <!-- status -->
+        <div id="status">
+            <span id="time"></span>
+            <span id="activity"></span>
+        </div>
+
+    </container>
+
+    <!-- loader -->
+    <div class="loader">
+        <span></span>
     </div>
 
 </body>
