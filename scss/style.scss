@@ -125,13 +125,13 @@ body {
 	}
 
 	&.loading {
-		container {
+		main {
 			opacity: 0;
 		}
 	}
 
 	&.loaded {
-		container {
+		main {
 			opacity: 1;
 			-webkit-animation: fadeIn .4s ease-in-out;
 			animation: fadeIn .4s ease-in-out;

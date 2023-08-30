@@ -1,7 +1,7 @@
 main {
 
 	// home
-	&.home {
+	.home {
 		background: var(--color-background);
 
 		section {
@@ -62,7 +62,7 @@ main {
 	}
 
 	// project
-	&.content {
+	.content {
 		background: var(--color-background);
 
 		section {
