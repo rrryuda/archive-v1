@@ -1,27 +1,27 @@
-// variables
+/* Variables */
 :root {
-
-	// color theme
+	/* Color Theme */
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
 	--color-foreground: rgba(32, 28, 28, 1);
 	--color-background: rgba(255, 255, 255, 1);
 	--color-background-html: rgba(224, 224, 224, 1);
-	--color-button-background: rgba(32, 28, 28, .08);
+	--color-button-background: rgba(32, 28, 28, 0.08);
 
+	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
 		--color-foreground: rgba(234, 234, 234, 1);
 		--color-background: rgba(32, 32, 32, 1);
 		--color-background-html: rgba(16, 16, 16, 1);
-		--color-button-background: rgba(255, 255, 255, .08);
+		--color-button-background: rgba(255, 255, 255, 0.08);
 	}
 
-	// width
+	/* Width */
 	--body: 1024px;
 
-	// spacer
+	/* Spacer */
 	--unit: 16px;
 
 	@media screen and (max-width: 1023px) {
@@ -33,7 +33,7 @@
 	}
 }
 
-// normalize
+/* Normalize */
 header,
 nav,
 footer,
@@ -80,7 +80,7 @@ iframe {
 
 img {
 	@media (prefers-color-scheme: dark) {
-		filter: brightness(88%)
+		filter: brightness(88%);
 	}
 }
 
@@ -97,7 +97,7 @@ a {
 	color: inherit;
 }
 
-// html
+/* HTML */
 html {
 	overflow: hidden;
 	font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -110,7 +110,7 @@ html {
 	color: var(--color-foreground);
 	background: var(--color-background-html);
 
-	// font smoothing 
+	/* Font Smoothing */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -125,40 +125,22 @@ body {
 	}
 
 	&.loading {
-		main {
+
+		main,
+		#status {
 			opacity: 0;
 		}
 	}
 
 	&.loaded {
-		main {
+
+		main,
+		#status {
 			opacity: 1;
-			-webkit-animation: fadeIn .4s ease-in-out;
-			animation: fadeIn .4s ease-in-out;
 		}
 
 		.loader {
 			display: none;
-		}
-
-		@-webkit-keyframes fadeIn {
-			from {
-				opacity: 0;
-			}
-
-			to {
-				opacity: 1;
-			}
-		}
-
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-			}
-
-			to {
-				opacity: 1;
-			}
 		}
 	}
 }
