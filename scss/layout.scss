@@ -30,13 +30,13 @@ main {
 
 			/* Highlights Styles */
 			&:nth-child(2) {
-				p {
-					margin-bottom: calc(var(--unit) * 3);
+				.tag {
+					margin: calc(var(--unit) * 0.5) 0 calc(var(--unit) * 3);
 				}
 
 				.cell {
 					&:nth-last-child(1) {
-						p {
+						.tag {
 							margin-bottom: 0;
 						}
 					}

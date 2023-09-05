@@ -74,6 +74,20 @@ p {
 	}
 }
 
+/* Tag */
+.tag {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: calc(var(--unit) * .75);
+
+	p {
+		font-size: 0.875rem;
+		font-weight: 500;
+		letter-spacing: -0.0125rem;
+		opacity: .48;
+	}
+}
+
 /* Button */
 .button {
 	font-weight: 600;
