@@ -31,7 +31,7 @@ main {
 			/* Highlights Styles */
 			&:nth-child(2) {
 				.tag {
-					margin: calc(var(--unit) * 0.5) 0 calc(var(--unit) * 3);
+					margin: calc(var(--unit) * 1) 0 calc(var(--unit) * 3);
 				}
 
 				.cell {
