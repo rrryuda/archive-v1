@@ -8,17 +8,6 @@ main {
 
 			/* Intro Styles */
 			&#intro {
-				margin-bottom: calc(var(--unit) * 12);
-				outline: 4px solid var(--color-hero);
-				outline-offset: -2px;
-				background: var(--color-hero);
-				box-shadow: 0 0 0 calc(var(--unit) * 8) var(--color-hero);
-
-				@media screen and (max-width: 1023px) {
-					margin-bottom: calc(var(--unit) * 8);
-					box-shadow: 0 0 0 calc(var(--unit) * 6) var(--color-hero);
-				}
-
 				.cell {
 					&:nth-child(1) {
 						grid-column: span 4;
@@ -71,6 +60,13 @@ main {
 
 				h3 {
 					margin-bottom: calc(var(--unit) * 0.25);
+				}
+			}
+
+			.row {
+				&:has(h2) {
+					padding-bottom: calc(var(--unit) * 1.5);
+					border-bottom: 1px solid var(--color-outline);
 				}
 			}
 		}

@@ -1,7 +1,6 @@
 /* Variables */
 :root {
 	/* Color Theme */
-	--color-hero: rgba(244, 244, 244, 1);
 	--color-white: rgba(255, 255, 255, 1);
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
@@ -13,7 +12,6 @@
 
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
-		--color-hero: rgba(52, 52, 52, 1);
 		--color-white: rgba(255, 255, 255, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
