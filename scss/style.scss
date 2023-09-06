@@ -9,11 +9,11 @@
 	--color-background: rgba(255, 255, 255, 1);
 	--color-html: rgba(64, 64, 64, 1);
 	--color-outline: rgba(16, 16, 16, 0.32);
-	--color-button-background: rgba(16, 16, 16, 0.12);
+	--color-button-background: rgba(16, 16, 16, 0.08);
 
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
-		--color-hero: rgba(56, 56, 56, 1);
+		--color-hero: rgba(52, 52, 52, 1);
 		--color-white: rgba(255, 255, 255, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
@@ -21,7 +21,7 @@
 		--color-background: rgba(40, 40, 40, 1);
 		--color-html: rgba(24, 24, 24, 1);
 		--color-outline: rgba(234, 234, 234, 0.32);
-		--color-button-background: rgba(255, 255, 255, 0.12);
+		--color-button-background: rgba(255, 255, 255, 0.08);
 	}
 
 	/* Width */
