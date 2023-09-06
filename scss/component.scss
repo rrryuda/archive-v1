@@ -138,6 +138,7 @@ hr {
 	align-items: flex-end;
 	right: calc(var(--unit) * 2);
 	bottom: calc(var(--unit) * 2);
+	color: var(--color-white);
 
 	@media screen and (max-width: 1439px) {
 		z-index: -1;
@@ -178,7 +179,7 @@ hr {
 	span {
 		width: 48px;
 		height: 48px;
-		border: 5px solid var(--color-foreground);
+		border: 5px solid var(--color-white);
 		border-bottom-color: transparent;
 		border-radius: 50%;
 		display: inline-block;

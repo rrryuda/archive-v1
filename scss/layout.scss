@@ -7,7 +7,18 @@ main {
 		section {
 
 			/* Intro Styles */
-			&:nth-child(1) {
+			&#intro {
+				margin-bottom: calc(var(--unit) * 12);
+				outline: 4px solid var(--color-hero);
+				outline-offset: -2px;
+				background: var(--color-hero);
+				box-shadow: 0 0 0 calc(var(--unit) * 8) var(--color-hero);
+
+				@media screen and (max-width: 1023px) {
+					margin-bottom: calc(var(--unit) * 8);
+					box-shadow: 0 0 0 calc(var(--unit) * 6) var(--color-hero);
+				}
+
 				.cell {
 					&:nth-child(1) {
 						grid-column: span 4;
@@ -29,7 +40,7 @@ main {
 			}
 
 			/* Highlights Styles */
-			&:nth-child(2) {
+			&#highlight {
 				.tag {
 					margin: calc(var(--unit) * 1) 0 calc(var(--unit) * 3);
 				}
@@ -43,12 +54,8 @@ main {
 				}
 			}
 
-			.cell {
-				grid-column: span 2;
-
-				h3 {
-					margin-bottom: calc(var(--unit) * 0.25);
-				}
+			h2 {
+				margin-top: calc(var(--unit) * 4);
 			}
 
 			picture {
@@ -56,6 +63,14 @@ main {
 
 				@media screen and (max-width: 1023px) {
 					grid-column: span 2;
+				}
+			}
+
+			.cell {
+				grid-column: span 2;
+
+				h3 {
+					margin-bottom: calc(var(--unit) * 0.25);
 				}
 			}
 		}
