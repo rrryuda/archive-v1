@@ -78,17 +78,6 @@ p {
 	}
 }
 
-/* Tag */
-.tag {
-	display: inline-flex;
-	flex-wrap: wrap;
-	gap: calc(var(--unit) * 0.5);
-
-	p {
-		font-size: 0.875rem;
-	}
-}
-
 /* Divider */
 hr {
 	width: 100%;

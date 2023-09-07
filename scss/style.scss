@@ -2,15 +2,17 @@
 :root {
 	/* Color Theme */
 	--color-white: rgba(255, 255, 255, 1);
+	--color-red: rgba(255, 144, 144, 1);
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
 	--color-foreground: rgba(16, 16, 16, 1);
 	--color-background: rgba(255, 255, 255, 1);
-	--color-html: rgba(64, 64, 64, 1);
+	--color-html: rgba(24, 24, 24, 1);
 
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
+		--color-red: rgba(96, 48, 48, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
 		--color-foreground: rgba(234, 234, 234, 1);
