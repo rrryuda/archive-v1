@@ -1,9 +1,10 @@
 main {
 	display: flex;
 	flex-direction: column;
-	max-width: 1280px;
+	max-width: var(--body);
 	padding: calc(var(--unit) * 8);
 	margin: 0 auto;
+	box-shadow: 0 0 0 calc(var(--unit) * 5) var(--color-background);
 
 	@media screen and (max-width: 1023px) {
 		padding: calc(var(--unit) * 6) calc(var(--unit) * 4);
@@ -28,9 +29,9 @@ main {
 			grid-template-columns: repeat(2, 1fr);
 		}
 
+		&:nth-child(1),
 		&:nth-last-child(1) {
 			margin-top: calc(var(--unit) * 4);
-			margin-bottom: 0;
 		}
 
 		/* Row and Cell Styles */

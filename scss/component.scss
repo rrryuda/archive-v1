@@ -84,8 +84,7 @@ p {
 		font-size: 0.875rem;
 		letter-spacing: -0.0125rem;
 		padding: calc(var(--unit) * 0.25) calc(var(--unit) * 0.5);
-		outline: 1px solid var(--color-outline);
-		outline-offset: -1px;
+		background: var(--color-button-background);
 		opacity: .64;
 	}
 }
@@ -111,7 +110,7 @@ p {
 	}
 
 	.material-symbols-sharp {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
