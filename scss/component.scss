@@ -2,7 +2,7 @@
 .material-symbols-sharp {
 	font-variation-settings:
 		'FILL' 0,
-		'wght' 500,
+		'wght' 700,
 		'GRAD' 0,
 		'opsz' 20;
 }
@@ -52,6 +52,10 @@ h3 {
 	a {
 		text-decoration: none;
 	}
+
+	.material-symbols-sharp {
+		font-size: 16px;
+	}
 }
 
 p {
@@ -64,13 +68,13 @@ p {
 		opacity: 0.48;
 	}
 
-	date {
-		opacity: 0.64;
-	}
-
 	strong {
 		font-weight: 600;
 		text-decoration: underline;
+	}
+
+	date {
+		opacity: 0.64;
 	}
 }
 
@@ -82,43 +86,15 @@ p {
 
 	p {
 		font-size: 0.875rem;
-		letter-spacing: -0.0125rem;
-		padding: calc(var(--unit) * 0.25) calc(var(--unit) * 0.5);
-		background: var(--color-button-background);
-		opacity: .64;
-	}
-}
-
-/* Button */
-.button {
-	font-weight: 600;
-	display: flex;
-	align-items: center;
-	gap: calc(var(--unit) * 1);
-	padding: calc(var(--unit) * 1) calc(var(--unit) * 1.5);
-	color: var(--color-foreground);
-	background: var(--color-button-background);
-	overflow: hidden;
-
-	&:hover {
-		color: var(--color-background);
-		background: var(--color-foreground);
-	}
-
-	span {
-		z-index: 1;
-	}
-
-	.material-symbols-sharp {
-		font-size: 16px;
 	}
 }
 
 /* Divider */
 hr {
 	width: 100%;
-	height: 1px;
-	background: var(--color-outline);
+	height: 2px;
+	margin-top: calc(var(--unit) * 2);
+	background: currentColor;
 }
 
 /* Copyright */

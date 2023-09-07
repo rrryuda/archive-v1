@@ -7,8 +7,6 @@
 	--color-foreground: rgba(16, 16, 16, 1);
 	--color-background: rgba(255, 255, 255, 1);
 	--color-html: rgba(64, 64, 64, 1);
-	--color-outline: rgba(16, 16, 16, 0.32);
-	--color-button-background: rgba(16, 16, 16, 0.08);
 
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
@@ -18,8 +16,6 @@
 		--color-foreground: rgba(234, 234, 234, 1);
 		--color-background: rgba(40, 40, 40, 1);
 		--color-html: rgba(24, 24, 24, 1);
-		--color-outline: rgba(234, 234, 234, 0.32);
-		--color-button-background: rgba(255, 255, 255, 0.08);
 	}
 
 	/* Width */
