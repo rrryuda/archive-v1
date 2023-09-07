@@ -4,7 +4,7 @@ main {
 	max-width: var(--body);
 	padding: calc(var(--unit) * 8);
 	margin: 0 auto;
-	box-shadow: 0 0 0 calc(var(--unit) * 5) var(--color-background);
+	box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-background);
 
 	@media screen and (max-width: 1023px) {
 		padding: calc(var(--unit) * 6) calc(var(--unit) * 4);
@@ -18,8 +18,12 @@ main {
 	section {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		gap: calc(var(--unit) * 3);
+		gap: calc(var(--unit) * 4);
 		margin-bottom: calc(var(--unit) * 4);
+
+		@media screen and (max-width: 1439px) {
+			gap: calc(var(--unit) * 3);
+		}
 
 		@media screen and (max-width: 1023px) {
 			grid-template-columns: repeat(4, 1fr);
