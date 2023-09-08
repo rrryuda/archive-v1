@@ -1,38 +1,18 @@
-main {
+/* Home Styles */
+#home {
+	@media screen and (max-width: 1439px) {
+		background: var(--color-pink-deep);
+	}
 
-	/* Home Styles */
-	&.home {
-		section {
+	main {
+		background: var(--color-pink);
+		box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-pink);
+	}
 
-			/* Intro Styles */
-			&#intro {
-				.cell {
-					&:nth-child(2) {
-						grid-column: span 4;
-
-						@media screen and (max-width: 1023px) {
-							grid-column: span 2;
-						}
-					}
-
-					h2 {
-						margin: 0;
-					}
-				}
-			}
-
-			/* Highlights Styles */
-			&#highlight {
-				.tag {
-					margin-top: calc(var(--unit) * 0.5);
-				}
-			}
-
-			h2 {
-				margin-top: calc(var(--unit) * 4);
-			}
-
-			picture {
+	/* Intro Styles */
+	#intro {
+		.cell {
+			&:nth-child(2) {
 				grid-column: span 4;
 
 				@media screen and (max-width: 1023px) {
@@ -40,103 +20,127 @@ main {
 				}
 			}
 
-			.cell {
-				grid-column: span 2;
-
-				h3 {
-					margin-bottom: calc(var(--unit) * 0.25);
-				}
+			h2 {
+				margin: 0;
 			}
 		}
 	}
 
-	/* Content Styles */
-	&.content {
-		section {
+	/* Highlights Styles */
+	#highlight {
+		.tag {
+			margin-top: calc(var(--unit) * 0.5);
+		}
+	}
 
-			p,
-			picture,
-			hr {
-				margin-bottom: calc(var(--unit) * 3);
+	h2 {
+		margin-top: calc(var(--unit) * 4);
+	}
+
+	picture {
+		grid-column: span 4;
+
+		@media screen and (max-width: 1023px) {
+			grid-column: span 2;
+		}
+	}
+
+	.cell {
+		grid-column: span 2;
+
+		h3 {
+			margin-bottom: calc(var(--unit) * 0.25);
+		}
+	}
+}
+
+/* Content Styles */
+#content {
+	@media screen and (max-width: 1439px) {
+		background: var(--color-background-deep);
+	}
+
+	p,
+	picture,
+	hr {
+		margin-bottom: calc(var(--unit) * 3);
+	}
+
+	h2 {
+		margin-bottom: calc(var(--unit) * 1);
+	}
+
+	h3 {
+		margin-bottom: calc(var(--unit) * 0.25);
+	}
+
+	.caption {
+		margin: calc(var(--unit) * 0.5) 0 0;
+	}
+
+	.cell,
+	.row {
+
+		h1,
+		h2,
+		h3,
+		p,
+		picture,
+		hr {
+			&:nth-last-child(1) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.cell {
+		grid-column: 2 / span 4;
+
+		@media screen and (max-width: 1023px) {
+			grid-column: 1 / -1;
+			margin: 0 calc(var(--unit) * 4);
+		}
+
+		@media screen and (max-width: 644px) {
+			margin: 0;
+		}
+
+		/* Navigation Styles */
+		&:nth-child(1) {
+			grid-column: span 1;
+			padding-top: calc(var(--unit) * 0.25);
+			margin-bottom: calc(var(--unit) * 3);
+
+			@media screen and (max-width: 1023px) {
+				grid-column: 1 / -1;
+				margin-right: 0;
+				margin-left: 0;
 			}
 
-			h2 {
-				margin-bottom: calc(var(--unit) * 1);
+			a {
+				display: flex;
+				align-items: center;
+				gap: 0.25rem;
 			}
+		}
 
-			h3 {
-				margin-bottom: calc(var(--unit) * 0.25);
-			}
+		/* Title Styles */
+		&:nth-child(2) {
+			margin-bottom: calc(var(--unit) * 3);
+		}
 
-			.caption {
-				margin: calc(var(--unit) * 0.5) 0 0;
-			}
+		.stacks {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: calc(var(--unit) * 1.5);
+			width: 100%;
+			margin-top: calc(var(--unit) * 1.5);
 
-			.cell,
-			.row {
-
-				h1,
-				h2,
-				h3,
-				p,
-				picture,
-				hr {
-					&:nth-last-child(1) {
-						margin-bottom: 0;
-					}
-				}
-			}
-
-			.cell {
-				grid-column: 2 / span 4;
-
-				@media screen and (max-width: 1023px) {
-					grid-column: 1 / -1;
-					margin: 0 calc(var(--unit) * 4);
-				}
-
-				@media screen and (max-width: 644px) {
-					margin: 0;
-				}
-
-				/* Navigation Styles */
-				&:nth-child(1) {
-					grid-column: span 1;
-					padding-top: calc(var(--unit) * 0.25);
-					margin-bottom: calc(var(--unit) * 3);
-
-					@media screen and (max-width: 1023px) {
-						grid-column: 1 / -1;
-						margin-right: 0;
-						margin-left: 0;
-					}
-
-					a {
-						display: flex;
-						align-items: center;
-						gap: 0.25rem;
-					}
-				}
-
-				/* Title Styles */
-				&:nth-child(2) {
-					margin-bottom: calc(var(--unit) * 3);
-				}
-
-				.stacks {
-					display: flex;
-					flex-wrap: wrap;
-					align-items: center;
-					justify-content: center;
-					gap: calc(var(--unit) * 1.5);
-					width: 100%;
-					margin-top: calc(var(--unit) * 1.5);
-
-					picture {
-						width: 48px;
-						margin: 0;
-					}
-				}
+			picture {
+				width: 48px;
+				margin: 0;
 			}
 		}
 	}

@@ -2,22 +2,26 @@
 :root {
 	/* Color Theme */
 	--color-white: rgba(255, 255, 255, 1);
-	--color-red: rgba(255, 160, 160, 1);
+	--color-pink: rgba(255, 160, 160, 1);
+	--color-pink-deep: rgba(255, 136, 136, 1);
+	--color-black: rgba(24, 24, 24, 1);
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
 	--color-foreground: rgba(16, 16, 16, 1);
 	--color-background: rgba(255, 255, 255, 1);
-	--color-html: rgba(24, 24, 24, 1);
+	--color-background-deep: rgba(240, 240, 240, 1);
 
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
-		--color-red: rgba(96, 48, 48, 1);
+		--color-pink: rgba(96, 48, 48, 1);
+		--color-pink-deep: rgba(96, 32, 32, 1);
+		--color-black: rgba(24, 24, 24, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
 		--color-foreground: rgba(234, 234, 234, 1);
 		--color-background: rgba(40, 40, 40, 1);
-		--color-html: rgba(24, 24, 24, 1);
+		--color-background-deep: rgba(32, 32, 32, 1);
 	}
 
 	/* Width */
@@ -110,7 +114,7 @@ html {
 	-webkit-font-display: fallback;
 	height: 100%;
 	color: var(--color-foreground);
-	background: var(--color-html);
+	background: var(--color-black);
 
 	/* Font Smoothing */
 	-webkit-font-smoothing: antialiased;

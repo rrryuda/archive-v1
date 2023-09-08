@@ -110,6 +110,7 @@ hr {
 		right: calc(50% - 120px);
 		bottom: auto;
 		width: 240px;
+		color: currentColor;
 
 		#time {
 			display: none;
@@ -149,6 +150,11 @@ hr {
 		box-sizing: border-box;
 		-webkit-animation: rotation 1s linear infinite;
 		animation: rotation 1s linear infinite;
+
+		@media screen and (max-width: 1439px) {
+			border-color: currentColor;
+			border-bottom-color: transparent;
+		}
 	}
 
 	@-webkit-keyframes rotation {
