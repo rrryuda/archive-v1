@@ -12,12 +12,18 @@
 	/* Intro Styles */
 	#intro {
 		.cell {
-			&:nth-child(2) {
+
+			&:nth-child(1),
+			&:nth-child(3) {
 				grid-column: span 4;
 
 				@media screen and (max-width: 1023px) {
 					grid-column: span 2;
 				}
+			}
+
+			&:nth-child(2) {
+				justify-content: center;
 			}
 
 			h2 {
@@ -108,7 +114,6 @@
 		/* Navigation Styles */
 		&:nth-child(1) {
 			grid-column: span 1;
-			padding-top: calc(var(--unit) * 0.25);
 			margin-bottom: calc(var(--unit) * 3);
 
 			@media screen and (max-width: 1023px) {
