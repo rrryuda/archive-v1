@@ -2,8 +2,8 @@
 :root {
 	/* Color Theme */
 	--color-white: rgba(255, 255, 255, 1);
-	--color-pink: rgba(255, 160, 160, 1);
-	--color-pink-deep: rgba(255, 136, 136, 1);
+	--color-pink: rgb(255, 136, 136);
+	--color-pink-deep: rgba(255, 112, 112, 1);
 	--color-black: rgba(24, 24, 24, 1);
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
@@ -14,8 +14,8 @@
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
-		--color-pink: rgba(96, 48, 48, 1);
-		--color-pink-deep: rgba(96, 32, 32, 1);
+		--color-pink: rgba(124, 48, 48, 1);
+		--color-pink-deep: rgba(116, 32, 32, 1);
 		--color-black: rgba(24, 24, 24, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
@@ -116,9 +116,11 @@ html {
 	color: var(--color-foreground);
 	background: var(--color-black);
 
-	/* Font Smoothing */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	@media (prefers-color-scheme: dark) {
+		/* Font Smoothing */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 
 body {
