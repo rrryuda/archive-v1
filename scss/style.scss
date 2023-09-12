@@ -135,8 +135,8 @@ body {
 	&.loading {
 
 		main,
-		.end,
-		#status {
+		#status,
+		#update {
 			opacity: 0;
 		}
 	}
@@ -144,8 +144,8 @@ body {
 	&.loaded {
 
 		main,
-		.end,
-		#status {
+		#status,
+		#update {
 			opacity: 1;
 		}
 
