@@ -161,7 +161,7 @@ hr {
 			opacity: 0.64;
 		}
 
-		&:nth-child(1) {
+		&.spinner {
 			width: 14px;
 			height: 14px;
 			border: 2px solid var(--color-white);
