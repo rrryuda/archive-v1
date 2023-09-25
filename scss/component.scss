@@ -75,6 +75,25 @@ p {
 	date {
 		opacity: 0.64;
 	}
+
+	a {
+		&:hover {
+			left: -0.25rem;
+			padding: 0 0.25rem;
+			color: var(--color-background);
+			background: var(--color-foreground);
+		}
+
+		&:has(.material-symbols-sharp) {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.125rem;
+		}
+	}
+
+	.material-symbols-sharp {
+		font-size: 16px;
+	}
 }
 
 /* Divider */
