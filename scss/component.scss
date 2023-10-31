@@ -49,6 +49,18 @@ h3 {
 	line-height: 1.625em;
 	letter-spacing: -0.0125rem;
 
+	&:has(svg) {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+
+		svg {
+			width: 1rem;
+			height: 1rem;
+			fill: currentColor;
+		}
+	}
+
 	a {
 		text-decoration: none;
 	}
