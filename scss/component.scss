@@ -50,7 +50,7 @@ h3 {
 	letter-spacing: -0.0125rem;
 
 	&:has(svg) {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		gap: 0.25rem;
 
