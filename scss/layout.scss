@@ -76,14 +76,14 @@
 		left: calc(var(--unit) * 3);
 		width: calc(var(--unit) * 6.5);
 		transform: rotate(-2deg);
-		filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, .48));
+		filter: drop-shadow(1px 2px 4px rgba(40, 0, 0, .48));
 
 		@media screen and (max-width: 1439px) {
 			display: none;
 		}
 
 		@media (prefers-color-scheme: dark) {
-			filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, .48)) brightness(88%);
+			filter: drop-shadow(1px 2px 4px rgba(40, 0, 0, .48)) brightness(88%);
 		}
 	}
 
@@ -97,13 +97,13 @@
 		max-width: calc(var(--unit) * 18);
 		min-height: calc(var(--unit) * 18);
 		padding: calc(var(--unit) * 2);
-		border-radius: 0 0 0 30px/45px;
+		border-radius: 0 0 40px/48px 0;
 		color: var(--color-black);
 		background: #ffa;
 		box-shadow:
-			inset 0 -40px 40px rgba(0, 0, 0, .16),
-			inset 0 25px 10px rgba(0, 0, 0, .12),
-			0 5px 6px 5px rgba(0, 0, 0, .08);
+			inset 0 -40px 40px rgba(40, 0, 0, .24),
+			inset 0 24px 12px rgba(40, 0, 0, .12),
+			0 4px 8px 4px rgba(40, 0, 0, .08);
 		transform: rotate(2deg);
 
 		::selection {
@@ -123,15 +123,15 @@
 			content: "";
 			position: absolute;
 			display: block;
+			right: -1px;
 			bottom: -1px;
-			left: -1px;
-			width: calc(var(--unit) * 1.5);
+			width: calc(var(--unit) * 1.75);
 			height: calc(var(--unit) * 2);
 			background: #ffa;
 			box-shadow:
-				3px -2px 10px rgba(0, 0, 0, .4),
-				inset 15px -15px 15px rgba(0, 0, 0, 0.24);
-			transform: skewX(25deg);
+				-2px -4px 12px rgba(40, 0, 0, .4),
+				inset 16px 16px 16px rgba(40, 0, 0, 0.24);
+			transform: skewX(-24deg);
 		}
 
 		&:after {
