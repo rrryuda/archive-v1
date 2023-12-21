@@ -7,6 +7,27 @@
 	main {
 		background: var(--color-pink);
 		box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-pink);
+
+		@media screen and (min-width: 1440px) {
+			margin: calc(var(--unit) * 10) auto calc(var(--unit) * 10);
+		}
+
+		/* Binder */
+		#binder {
+			position: absolute;
+			top: calc(var(--unit) * -8.25);
+			right: 3rem;
+			width: calc(var(--unit) * 6.5);
+			filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, .48));
+
+			@media screen and (max-width: 1439px) {
+				display: none;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, .48)) brightness(88%);
+			}
+		}
 	}
 
 	/* Intro Styles */
