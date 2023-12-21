@@ -196,6 +196,12 @@
 			transform: rotate(24deg);
 			filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, .24));
 
+			@media screen and (max-width: 644px) {
+				top: calc(var(--unit) * -1.5);
+				right: calc(50% - var(--unit) * 5);
+				transform: rotate(8deg);
+			}
+
 			@media (prefers-color-scheme: dark) {
 				opacity: .48;
 			}
