@@ -15,9 +15,10 @@
 		/* Binder */
 		#binder {
 			position: absolute;
-			top: calc(var(--unit) * -8.25);
+			top: calc(var(--unit) * -8.5);
 			right: 3rem;
 			width: calc(var(--unit) * 6.5);
+			transform: rotate(2deg);
 			filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, .48));
 
 			@media screen and (max-width: 1439px) {
