@@ -175,4 +175,30 @@
 			}
 		}
 	}
+
+	#overview {
+		padding: calc(var(--unit) * 3);
+		margin-bottom: calc(var(--unit) * 3);
+		background: var(--color-background-hover);
+		transform: rotate(-1.5deg);
+		filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, .24));
+
+		@media (prefers-color-scheme: dark) {
+			filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, .64));
+		}
+
+		#tape {
+			position: absolute;
+			top: calc(var(--unit) * -1);
+			right: calc(var(--unit) * -3);
+			width: calc(var(--unit) * 10);
+			opacity: .72;
+			transform: rotate(24deg);
+			filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, .24));
+
+			@media (prefers-color-scheme: dark) {
+				opacity: .48;
+			}
+		}
+	}
 }
