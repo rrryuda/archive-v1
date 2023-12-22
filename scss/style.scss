@@ -118,6 +118,12 @@ html {
 	color: var(--color-foreground);
 	background: var(--color-black);
 
+	/* Text Size */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+
 	@media (prefers-color-scheme: dark) {
 		/* Font Smoothing */
 		-webkit-font-smoothing: antialiased;
