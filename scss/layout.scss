@@ -44,11 +44,6 @@
 		}
 	}
 
-	/* Copyright styles */
-	#copyright {
-		margin-top: calc(var(--unit) * 4);
-	}
-
 	h2 {
 		margin-top: calc(var(--unit) * 4);
 	}
@@ -271,4 +266,9 @@
 			}
 		}
 	}
+}
+
+/* Copyright styles */
+#copyright {
+	margin-top: calc(var(--unit) * 4);
 }
