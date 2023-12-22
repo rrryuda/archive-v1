@@ -7,8 +7,8 @@ h3 {
 
 	a {
 		&:hover {
-			left: -0.25rem;
-			padding: 0 0.25rem;
+			left: -.25rem;
+			padding: 0 .25rem;
 			color: var(--color-background);
 			background: var(--color-foreground);
 		}
@@ -17,12 +17,12 @@ h3 {
 
 h1 {
 	font-size: 2rem;
-	letter-spacing: -0.05rem;
+	letter-spacing: -.05rem;
 }
 
 h2 {
 	font-size: 1.375rem;
-	letter-spacing: -0.025rem;
+	letter-spacing: -.025rem;
 
 	a {
 		text-decoration: none;
@@ -32,7 +32,7 @@ h2 {
 h3 {
 	font-size: 1rem;
 	line-height: 1.625em;
-	letter-spacing: -0.0125rem;
+	letter-spacing: -.0125rem;
 
 	a {
 		text-decoration: none;
@@ -40,7 +40,7 @@ h3 {
 		&:has(svg) {
 			display: inline-flex;
 			align-items: center;
-			gap: 0.25rem;
+			gap: .25rem;
 
 			svg {
 				width: 1rem;
@@ -53,26 +53,26 @@ h3 {
 
 p {
 	line-height: 1.625em;
-	opacity: 0.8;
+	opacity: .88;
 
 	strong {
 		font-weight: 600;
 	}
 
 	date {
-		opacity: 0.64;
+		opacity: .64;
 	}
 
 	&.caption {
-		font-size: 0.75rem;
+		font-size: .75rem;
 		font-weight: 500;
-		opacity: 0.48;
+		opacity: .48;
 	}
 
 	a {
 		&:hover {
-			left: -0.25rem;
-			padding: 0 0.25rem;
+			left: -.25rem;
+			padding: 0 .25rem;
 			color: var(--color-background);
 			background: var(--color-foreground);
 		}
@@ -80,7 +80,7 @@ p {
 		&:has(svg) {
 			display: inline-flex;
 			align-items: center;
-			gap: 0.25rem;
+			gap: .25rem;
 
 			svg {
 				width: 1rem;
@@ -146,8 +146,8 @@ hr {
 	}
 
 	#time {
-		font-size: 0.875rem;
-		margin-bottom: 0.25rem;
+		font-size: .875rem;
+		margin-bottom: .25rem;
 	}
 }
 
@@ -170,10 +170,10 @@ hr {
 	span {
 		text-align: center;
 		white-space: pre-wrap;
-		opacity: 0.32;
+		opacity: .32;
 
 		@media screen and (max-width: 1439px) {
-			opacity: 0.64;
+			opacity: .64;
 		}
 
 		&.spinner {
