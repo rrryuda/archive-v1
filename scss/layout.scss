@@ -44,6 +44,11 @@
 		}
 	}
 
+	/* Copyright styles */
+	#copyright {
+		margin-top: calc(var(--unit) * 4);
+	}
+
 	h2 {
 		margin-top: calc(var(--unit) * 4);
 	}
@@ -203,16 +208,8 @@
 
 	.cell,
 	.row {
-
-		h1,
-		h2,
-		h3,
-		p,
-		picture,
-		hr {
-			&:last-child {
-				margin-bottom: 0;
-			}
+		:last-child {
+			margin-bottom: 0;
 		}
 	}
 
@@ -266,9 +263,4 @@
 			}
 		}
 	}
-}
-
-/* Copyright styles */
-#copyright {
-	margin-top: calc(var(--unit) * 4);
 }
