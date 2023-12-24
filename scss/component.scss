@@ -101,6 +101,19 @@ hr {
 	opacity: .64;
 }
 
+/* Image Popup */
+.popup {
+	position: fixed;
+	display: none;
+	z-index: 999;
+	max-width: 12rem;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
 /* Status */
 #status,
 #update {

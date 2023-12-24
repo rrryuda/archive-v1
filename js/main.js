@@ -64,8 +64,44 @@ setInterval(function () {
 
     // Check if all resources are loaded
     if (document.readyState === "complete") {
-        // Remove loading class and add loaded class to body
+        // Remove loading class and add loaded class to body*/
         document.body.classList.remove("loading");
         document.body.classList.add("loaded");
     }
 }, 1000);
+
+// Image Popup
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth >= 1440) {
+        const triggers = document.querySelectorAll(".trigger");
+
+        triggers.forEach((trigger) => {
+            const popupId = `#${trigger.id}Popup`;
+            const popup = document.querySelector(popupId);
+
+            trigger.addEventListener("mouseover", function () {
+                popup.style.display = "block";
+                updatePopupPosition(popup);
+            });
+
+            trigger.addEventListener("mouseout", function () {
+                popup.style.display = "none";
+            });
+
+            document.addEventListener("mousemove", function (event) {
+                if (trigger.matches(":hover")) {
+                    updatePopupPosition(popup, event.clientX, event.clientY);
+                }
+            });
+        });
+    }
+});
+
+function updatePopupPosition(popup, x, y) {
+    const mouseX = x || event.clientX;
+    const mouseY = y || event.clientY;
+    const triggerWidth = 20; // Adjust this value based on the trigger width
+
+    popup.style.top = `${mouseY}px`;
+    popup.style.left = `${mouseX + triggerWidth}px`;
+}
