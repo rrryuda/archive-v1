@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function updatePopupPosition(popup, x, y) {
     const mouseX = x || event.clientX;
     const mouseY = y || event.clientY;
-    const triggerWidth = 20; // Adjust this value based on the trigger width
+    const triggerWidth = 16; // Adjust this value based on the trigger width
 
     popup.style.top = `${mouseY}px`;
     popup.style.left = `${mouseX + triggerWidth}px`;

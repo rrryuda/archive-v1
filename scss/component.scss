@@ -104,6 +104,7 @@ hr {
 /* Image Popup */
 .popup {
 	position: fixed;
+	overflow: hidden;
 	display: none;
 	z-index: 999;
 	max-width: 8rem;
