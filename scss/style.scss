@@ -86,12 +86,6 @@ iframe {
 	width: 100%;
 }
 
-img {
-	@media (prefers-color-scheme: dark) {
-		filter: brightness(88%);
-	}
-}
-
 video,
 iframe {
 	background: var(--color-black);
