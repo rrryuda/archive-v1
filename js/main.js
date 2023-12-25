@@ -72,7 +72,7 @@ setInterval(function () {
 
 // Image Popup
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth >= 1440) {
+    if (window.innerWidth >= 1024) {
         const triggers = document.querySelectorAll(".trigger");
 
         triggers.forEach((trigger) => {
