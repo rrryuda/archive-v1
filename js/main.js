@@ -72,29 +72,27 @@ setInterval(function () {
 
 // Image Popup
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth >= 1024) {
-        const triggers = document.querySelectorAll(".trigger");
+    const triggers = document.querySelectorAll(".trigger");
 
-        triggers.forEach((trigger) => {
-            const popupId = `#${trigger.id}Popup`;
-            const popup = document.querySelector(popupId);
+    triggers.forEach((trigger) => {
+        const popupId = `#${trigger.id}Popup`;
+        const popup = document.querySelector(popupId);
 
-            trigger.addEventListener("mouseover", function () {
-                popup.style.display = "block";
-                updatePopupPosition(popup);
-            });
-
-            trigger.addEventListener("mouseout", function () {
-                popup.style.display = "none";
-            });
-
-            document.addEventListener("mousemove", function (event) {
-                if (trigger.matches(":hover")) {
-                    updatePopupPosition(popup, event.clientX, event.clientY);
-                }
-            });
+        trigger.addEventListener("mouseover", function () {
+            popup.style.display = "block";
+            updatePopupPosition(popup);
         });
-    }
+
+        trigger.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+
+        document.addEventListener("mousemove", function (event) {
+            if (trigger.matches(":hover")) {
+                updatePopupPosition(popup, event.clientX, event.clientY);
+            }
+        });
+    });
 });
 
 function updatePopupPosition(popup, x, y) {
