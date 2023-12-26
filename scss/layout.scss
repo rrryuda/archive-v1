@@ -50,7 +50,7 @@
 		margin-bottom: calc(var(--unit) * 4);
 
 		@media screen and (max-width: 1439px) {
-			gap: calc(var(--unit) * 3);
+			margin-bottom: calc(var(--unit) * 3);
 		}
 	}
 
