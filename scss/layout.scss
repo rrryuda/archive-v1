@@ -44,6 +44,10 @@
 		background: var(--color-background-deep);
 	}
 
+	h2 {
+		margin-bottom: calc(var(--unit) * 1);
+	}
+
 	p,
 	picture,
 	hr {
@@ -54,8 +58,18 @@
 		}
 	}
 
-	h2 {
-		margin-bottom: calc(var(--unit) * 1);
+	picture {
+		span {
+			font-size: calc(var(--unit) * 1.375);
+			font-weight: 600;
+			line-height: 1.25em;
+			position: absolute;
+			z-index: 999;
+			width: 100%;
+			padding: calc(var(--unit) * 1.25);
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+			opacity: .64;
+		}
 	}
 
 	.cell,
