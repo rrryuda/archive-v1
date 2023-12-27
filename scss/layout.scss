@@ -67,6 +67,7 @@
 			z-index: 999;
 			width: 100%;
 			padding: calc(var(--unit) * 1.25);
+			color: var(--color-white);
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 			opacity: .64;
 		}

@@ -118,21 +118,14 @@ html {
 	-ms-text-size-adjust: none;
 	-o-text-size-adjust: none;
 
-	@media (prefers-color-scheme: dark) {
-		/* Font Smoothing */
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
+	/* Font Smoothing */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
 	overflow: auto;
 	height: 100%;
-
-	::selection {
-		color: var(--color-select-foreground);
-		background: var(--color-select-background);
-	}
 
 	&.loading {
 
