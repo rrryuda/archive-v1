@@ -135,6 +135,12 @@ hr {
 	display: inline-flex;
 	color: var(--color-white);
 
+	@media screen and (min-width: 1440px) and (prefers-color-scheme: light) {
+		/* Font Smoothing */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
 	@media screen and (max-width: 1439px) {
 		z-index: -1;
 		width: 100%;

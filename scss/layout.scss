@@ -70,6 +70,10 @@
 			color: var(--color-white);
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 			opacity: .64;
+
+			/* Font Smoothing */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 		}
 	}
 
