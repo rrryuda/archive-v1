@@ -1,13 +1,5 @@
 /* Home styles */
 #home {
-	@media screen and (max-width: 1439px) {
-		background: var(--color-pink-deep);
-	}
-
-	main {
-		background: var(--color-pink);
-		box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-pink);
-	}
 
 	/* Intro styles */
 	section:first-child {
@@ -40,8 +32,13 @@
 
 /* Content styles */
 #content {
-	@media screen and (max-width: 1439px) {
-		background: var(--color-background-deep);
+
+	main {
+		@media (prefers-color-scheme: dark) {
+			/* Font Smoothing */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
 	}
 
 	h2 {
