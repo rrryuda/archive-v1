@@ -1,32 +1,33 @@
 /* Home styles */
 #home {
 
-	/* Intro styles */
-	section:first-child {
+	.cell {
+		grid-column: span 2;
 
-		.cell {
+		&:first-child,
+		&:nth-child(3) {
+			grid-column: span 4;
 
-			&:first-child,
-			&:nth-child(3) {
-				grid-column: span 4;
-
-				@media screen and (max-width: 1023px) {
-					grid-column: span 2;
-				}
+			@media screen and (max-width: 1023px) {
+				grid-column: span 2;
 			}
 
-			&:nth-child(2) {
-				justify-content: center;
+			h2 {
+				font-size: 1.5rem;
+			}
+		}
 
-				h3 {
-					margin: 0;
-				}
+		&:nth-child(2) {
+			justify-content: center;
+
+			h3 {
+				margin: 0;
 			}
 		}
 	}
 
-	.cell {
-		grid-column: span 2;
+	hr {
+		grid-column: 1 / -1;
 	}
 }
 

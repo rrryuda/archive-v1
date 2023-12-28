@@ -197,23 +197,6 @@ hr {
 		@media screen and (max-width: 1439px) {
 			opacity: .64;
 		}
-
-		&.spinner {
-			display: inline-block;
-			box-sizing: border-box;
-			width: 14px;
-			height: 14px;
-			border: 2px solid var(--color-white);
-			border-bottom-color: transparent;
-			border-radius: 50%;
-			-webkit-animation: rotation 1s linear infinite;
-			animation: rotation 1s linear infinite;
-
-			@media screen and (max-width: 1439px) {
-				border-color: currentColor;
-				border-bottom-color: transparent;
-			}
-		}
 	}
 }
 
