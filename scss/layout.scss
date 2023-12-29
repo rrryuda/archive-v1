@@ -2,40 +2,46 @@
 #home {
 
 	p {
-		opacity: .56;
+		opacity: .64;
 	}
 
 	hr {
 		grid-column: 1 / -1;
 	}
 
-	.cell {
-		grid-column: span 2;
+	/* Intro styles */
+	section:first-child {
+		.cell {
 
-		&:first-child,
-		&:nth-child(3) {
-			grid-column: span 4;
+			&:first-child,
+			&:nth-child(3) {
+				grid-column: span 4;
 
-			@media screen and (max-width: 1023px) {
-				grid-column: span 2;
+				@media screen and (max-width: 1023px) {
+					grid-column: span 2;
+				}
+
+				h2 {
+					font-size: 1.5rem;
+
+					@media screen and (min-width: 1024px) {
+						margin-right: calc(var(--unit) * 3);
+					}
+				}
 			}
 
-			h2 {
-				font-size: 1.5rem;
+			&:nth-child(2) {
+				justify-content: center;
 
-				@media screen and (min-width: 1024px) {
-					margin-right: calc(var(--unit) * 3);
+				h3 {
+					margin: 0;
 				}
 			}
 		}
+	}
 
-		&:nth-child(2) {
-			justify-content: center;
-
-			h3 {
-				margin: 0;
-			}
-		}
+	.cell {
+		grid-column: span 2;
 	}
 }
 

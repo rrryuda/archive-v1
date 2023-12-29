@@ -18,11 +18,12 @@ h3 {
 
 	a {
 		&:hover {
-			left: -.25rem;
-			padding: 0 .25rem;
 			color: var(--color-select-foreground);
 			background: var(--color-select-background);
 			border-radius: .25rem;
+			box-shadow:
+				-.25rem 0 0 0 var(--color-select-background),
+				.25rem 0 0 0 var(--color-select-background);
 		}
 
 		&:has(svg) {
@@ -83,11 +84,12 @@ p {
 
 	a {
 		&:hover {
-			left: -.25rem;
-			padding: 0 .25rem;
 			color: var(--color-select-foreground);
 			background: var(--color-select-background);
 			border-radius: .25rem;
+			box-shadow:
+				-.25rem 0 0 0 var(--color-select-background),
+				.25rem 0 0 0 var(--color-select-background);
 		}
 
 		&:has(svg) {
