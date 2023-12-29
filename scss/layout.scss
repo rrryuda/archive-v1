@@ -25,6 +25,12 @@
 						}
 					}
 				}
+
+				&:nth-child(3) {
+					:last-child {
+						margin: 0;
+					}
+				}
 			}
 		}
 
