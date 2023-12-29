@@ -1,6 +1,14 @@
 /* Home styles */
 #home {
 
+	p {
+		opacity: .72;
+	}
+
+	hr {
+		grid-column: 1 / -1;
+	}
+
 	.cell {
 		grid-column: span 2;
 
@@ -24,10 +32,6 @@
 				margin: 0;
 			}
 		}
-	}
-
-	hr {
-		grid-column: 1 / -1;
 	}
 }
 
