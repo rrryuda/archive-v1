@@ -1,15 +1,8 @@
 /* Home styles */
 #home {
-	h3 {
-		margin-bottom: calc(var(--unit) * .375);
-	}
-
-	hr {
-		grid-column: 1 / -1;
-	}
-
-	/* Intro styles */
 	section {
+
+		/* Intro styles */
 		&:first-child {
 			.cell {
 
@@ -32,29 +25,42 @@
 						}
 					}
 				}
-
-				&:last-child {
-					h3 {
-						&:last-child {
-							margin: 0;
-						}
-					}
-				}
 			}
 		}
 
+		/* Project styles */
 		&:nth-child(2) {
 			.cell {
 				&:first-child {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
 					grid-column: span 4;
+					gap: calc(var(--unit) * 4);
+
+					@media screen and (max-width: 1439px) {
+						gap: calc(var(--unit) * 3);
+					}
 
 					@media screen and (max-width: 1023px) {
+						grid-template-columns: repeat(2, 1fr);
 						grid-column: span 2;
+					}
+
+					@media screen and (max-width: 767px) {
+						grid-template-columns: repeat(2, 1fr);
+						margin-bottom: calc(var(--unit) * 5);
+					}
+
+					* {
+						grid-column: span 2;
+					}
+
+					:first-child {
+						grid-column: 1 / -1;
 					}
 				}
 
 				h2,
-				p,
 				hr {
 					margin-bottom: calc(var(--unit) * 4);
 
@@ -66,8 +72,22 @@
 						margin: 0;
 					}
 				}
+
+				p {
+					a {
+						opacity: .4;
+
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
 			}
 		}
+	}
+
+	h3 {
+		margin-bottom: calc(var(--unit) * .375);
 	}
 
 	.cell {

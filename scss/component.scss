@@ -69,7 +69,7 @@ p {
 	}
 
 	date {
-		opacity: .56;
+		opacity: .4;
 	}
 
 	&:lang(ko) {
@@ -84,6 +84,8 @@ p {
 	}
 
 	a {
+		font-weight: 600;
+
 		&:hover {
 			color: var(--color-select-foreground);
 			background: var(--color-select-background);

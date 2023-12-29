@@ -9,11 +9,6 @@
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
 
-	/* &#home {
-		--color-background: rgba(160, 216, 192, 1);
-		--color-background-deep: rgba(152, 200, 184, 1);
-	} */
-
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
@@ -23,12 +18,6 @@
 		--color-background-deep: rgba(32, 32, 32, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
-
-		/* &#home {
-			--color-foreground: rgba(0, 0, 0, 1);
-			--color-select-foreground: rgba(255, 255, 255, 1);
-			--color-select-background: rgba(0, 0, 0, 1);
-		} */
 	}
 
 	/* Width */
