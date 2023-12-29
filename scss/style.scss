@@ -2,8 +2,6 @@
 :root {
 	/* Color Theme */
 	--color-white: rgba(255, 255, 255, 1);
-	--color-red: rgba();
-	--color-blue: rgba();
 	--color-black: rgba(32, 32, 32, 1);
 	--color-foreground: rgba(0, 0, 0, 1);
 	--color-background: rgba(255, 255, 255, 1);
@@ -19,8 +17,6 @@
 	/* Dark Mode */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
-		--color-red: rgba();
-		--color-blue: rgba();
 		--color-black: rgba(16, 16, 16, 1);
 		--color-foreground: rgba(240, 240, 240, 1);
 		--color-background: rgba(40, 40, 40, 1);
@@ -120,6 +116,10 @@ html {
 	height: 100%;
 	color: var(--color-foreground);
 	background: var(--color-black);
+
+	/* Font Smoothing */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	/* Text Size */
 	-webkit-text-size-adjust: none;

@@ -1,8 +1,7 @@
 /* Home styles */
 #home {
-
-	p {
-		opacity: .64;
+	h3 {
+		margin-bottom: calc(var(--unit) * .375);
 	}
 
 	hr {
@@ -10,31 +9,62 @@
 	}
 
 	/* Intro styles */
-	section:first-child {
-		.cell {
+	section {
+		&:first-child {
+			.cell {
 
-			&:first-child,
-			&:nth-child(3) {
-				grid-column: span 4;
-
-				@media screen and (max-width: 1023px) {
-					grid-column: span 2;
+				&:first-child {
+					grid-column: 1 / -1;
 				}
 
-				h2 {
-					font-size: 1.5rem;
+				&:nth-child(2) {
+					grid-column: span 4;
 
-					@media screen and (min-width: 1024px) {
-						margin-right: calc(var(--unit) * 3);
+					@media screen and (max-width: 1023px) {
+						grid-column: span 2;
+					}
+
+					h2 {
+						font-size: 1.5rem;
+
+						@media screen and (min-width: 1024px) {
+							margin-right: calc(var(--unit) * 3);
+						}
+					}
+				}
+
+				&:last-child {
+					h3 {
+						&:last-child {
+							margin: 0;
+						}
 					}
 				}
 			}
+		}
 
-			&:nth-child(2) {
-				justify-content: center;
+		&:nth-child(2) {
+			.cell {
+				&:first-child {
+					grid-column: span 4;
 
-				h3 {
-					margin: 0;
+					@media screen and (max-width: 1023px) {
+						grid-column: span 2;
+					}
+				}
+
+				h2,
+				p,
+				hr {
+					margin-bottom: calc(var(--unit) * 4);
+
+					@media screen and (max-width: 1439px) {
+						margin-bottom: calc(var(--unit) * 3);
+					}
+
+					&:last-child {
+						margin: 0;
+					}
 				}
 			}
 		}
@@ -47,17 +77,12 @@
 
 /* Content styles */
 #content {
-
-	main {
-		@media (prefers-color-scheme: dark) {
-			/* Font Smoothing */
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-	}
-
 	h2 {
 		margin-bottom: calc(var(--unit) * 1);
+	}
+
+	h3 {
+		margin-bottom: calc(var(--unit) * .375);
 	}
 
 	p,
@@ -82,10 +107,6 @@
 			color: var(--color-white);
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 			opacity: .64;
-
-			/* Font Smoothing */
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 		}
 	}
 

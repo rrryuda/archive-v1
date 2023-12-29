@@ -42,10 +42,6 @@ section {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-
-		h3 {
-			margin-bottom: calc(var(--unit) * .375);
-		}
 	}
 
 	.row {
