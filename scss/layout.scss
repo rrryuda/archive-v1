@@ -4,26 +4,25 @@
 
 		/* Intro styles */
 		&:first-child {
-			.cell {
-				&:first-child {
-					grid-column: 1 / -1;
+			h1 {
+				grid-column: 1 / -1;
+			}
+
+			h2 {
+				font-size: 1.625rem;
+				grid-column: span 4;
+
+				@media screen and (min-width: 1024px) {
+					margin-right: calc(var(--unit) * 3);
 				}
 
-				&:nth-child(2) {
-					grid-column: span 4;
-
-					@media screen and (max-width: 1023px) {
-						grid-column: span 2;
-					}
-
-					h2 {
-						font-size: 1.5rem;
-
-						@media screen and (min-width: 1024px) {
-							margin-right: calc(var(--unit) * 3);
-						}
-					}
+				@media screen and (max-width: 1023px) {
+					grid-column: span 2;
 				}
+			}
+
+			ul {
+				grid-column: span 2;
 			}
 		}
 
@@ -79,12 +78,20 @@
 	}
 
 	p,
-	picture,
-	hr {
+	hr,
+	picture {
 		margin-bottom: calc(var(--unit) * 4);
 
 		@media screen and (max-width: 1439px) {
 			margin-bottom: calc(var(--unit) * 3);
+		}
+	}
+
+	hr {
+		margin-top: calc(var(--unit) * 4);
+
+		@media screen and (max-width: 1439px) {
+			margin-top: calc(var(--unit) * 3);
 		}
 	}
 
@@ -133,9 +140,8 @@
 			margin-bottom: calc(var(--unit) * 3);
 		}
 
-		.stacks {
+		#stacks {
 			display: flex;
-			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
 			gap: calc(var(--unit) * 1.5);
