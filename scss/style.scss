@@ -87,10 +87,13 @@ iframe {
 
 a {
 	cursor: pointer;
-	line-height: 1.5em;
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
+}
+
+li {
+	list-style: none;
 }
 
 /* HTML */
