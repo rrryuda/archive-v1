@@ -83,9 +83,9 @@ p {
 	line-height: 1.625em;
 
 	&.caption {
-		font-size: .75rem;
+		font-size: .875rem;
 		font-weight: 500;
-		margin: calc(var(--unit) * .5) 0 0;
+		margin-top: calc(var(--unit) * .75);
 		opacity: .48;
 	}
 
