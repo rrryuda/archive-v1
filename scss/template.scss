@@ -50,19 +50,19 @@ section {
 		&.-f {
 			grid-column: 1 / -1 !important;
 		}
-	}
 
-	.column {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: calc(var(--unit) * 4);
+		&.-g {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: calc(var(--unit) * 4);
 
-		@media screen and (max-width: 1439px) {
-			gap: calc(var(--unit) * 3);
-		}
+			@media screen and (max-width: 1439px) {
+				gap: calc(var(--unit) * 3);
+			}
 
-		@media screen and (max-width: 1023px) {
-			grid-template-columns: 100%;
+			@media screen and (max-width: 1023px) {
+				grid-template-columns: 100%;
+			}
 		}
 	}
 }
