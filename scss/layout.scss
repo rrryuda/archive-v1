@@ -5,10 +5,17 @@
 		/* Intro styles */
 		&:first-child {
 			h1 {
+				font-size: 3rem;
+				letter-spacing: -.075rem;
 				grid-column: span 4;
 
 				@media screen and (max-width: 1023px) {
 					grid-column: span 2;
+				}
+
+				@media screen and (max-width: 767px) {
+					letter-spacing: -.05rem;
+					font-size: 2rem;
 				}
 			}
 

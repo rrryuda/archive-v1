@@ -7,6 +7,33 @@ p {
 	&:lang(ko) {
 		display: none;
 	}
+}
+
+h1,
+h2,
+h3,
+li {
+	font-weight: 600;
+
+	&:has(svg) {
+		display: inline-flex;
+		align-items: center;
+		gap: .25rem;
+
+		svg {
+			width: 1rem;
+			height: 1rem;
+			fill: currentColor;
+		}
+	}
+}
+
+h3,
+li,
+p {
+	font-size: 1rem;
+	letter-spacing: -.0125rem;
+	line-height: 1.625em;
 
 	a {
 		&:hover {
@@ -32,25 +59,6 @@ p {
 	}
 }
 
-h1,
-h2,
-h3,
-li {
-	font-weight: 600;
-
-	&:has(svg) {
-		display: inline-flex;
-		align-items: center;
-		gap: .25rem;
-
-		svg {
-			width: 1rem;
-			height: 1rem;
-			fill: currentColor;
-		}
-	}
-}
-
 h1 {
 	font-size: 2rem;
 	letter-spacing: -.05rem;
@@ -61,18 +69,6 @@ h2 {
 	font-size: 1.375rem;
 	letter-spacing: -.0375rem;
 	line-height: 1.5em;
-}
-
-h3,
-li,
-p {
-	font-size: 1rem;
-	letter-spacing: -.0125rem;
-}
-
-h3,
-li {
-	line-height: 1.625em;
 }
 
 h3 {
@@ -96,8 +92,6 @@ li {
 }
 
 p {
-	line-height: 1.625em;
-
 	&.caption {
 		font-size: .875rem;
 		font-weight: 500;
@@ -105,14 +99,17 @@ p {
 		opacity: .48;
 	}
 
-	strong {
+	strong,
+	a {
 		font-weight: 600;
 	}
 
-	a {
-		font-weight: 600;
+	a,
+	date {
 		opacity: .4;
+	}
 
+	a {
 		&:hover {
 			opacity: 1;
 		}
@@ -121,10 +118,6 @@ p {
 	role {
 		color: var(--color-blue);
 	}
-
-	date {
-		opacity: .4;
-	}
 }
 
 /* Divider */
@@ -132,7 +125,6 @@ hr {
 	width: 100%;
 	height: 2px;
 	background: currentColor;
-	opacity: .64;
 }
 
 /* Image Popup */
@@ -147,11 +139,6 @@ hr {
 
 	&.-s {
 		max-width: calc(var(--unit) * 4);
-	}
-
-	img {
-		width: 100%;
-		height: auto;
 	}
 }
 
