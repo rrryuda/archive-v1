@@ -1,8 +1,8 @@
 /* Variables */
 :root {
-	/* Color Theme */
+	/* Color theme */
 	--color-white: rgba(255, 255, 255, 1);
-	--color-blue: rgba(24, 120, 240, 1);
+	--color-red: rgba(232, 48, 56, 1);
 	--color-black: rgba(32, 32, 32, 1);
 	--color-foreground: rgba(0, 0, 0, 1);
 	--color-foreground-deep: rgba(125, 125, 125, 1);
@@ -11,10 +11,10 @@
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
 
-	/* Dark Mode */
+	/* Color theme (dark) */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
-		--color-blue: rgba(48, 144, 255, 1);
+		--color-red: rgba(248, 72, 80, 1);
 		--color-black: rgba(16, 16, 16, 1);
 		--color-foreground: rgba(240, 240, 240, 1);
 		--color-foreground-deep: rgba(125, 125, 125, 1);
@@ -100,7 +100,7 @@ li {
 	list-style: none;
 }
 
-/* HTML */
+/* Html */
 html {
 	overflow: hidden;
 	font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -113,7 +113,7 @@ html {
 	color: var(--color-foreground);
 	background: var(--color-black);
 
-	/* Text Size */
+	/* Text size */
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
