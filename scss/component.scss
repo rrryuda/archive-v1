@@ -54,7 +54,7 @@ li {
 h1 {
 	font-size: 2rem;
 	font-weight: 700;
-	letter-spacing: -.075rem;
+	letter-spacing: -.05rem;
 	line-height: 1.25em;
 }
 
@@ -65,21 +65,18 @@ h2 {
 }
 
 h3,
-li {
+li,
+p {
 	font-size: 1rem;
 	letter-spacing: -.0125rem;
 }
 
-h3 {
+h3,
+li {
 	line-height: 1.625em;
 }
 
-li {
-	line-height: 1.75em;
-}
-
 p {
-	font-size: 1rem;
 	line-height: 1.625em;
 
 	&.caption {
@@ -100,6 +97,10 @@ p {
 		&:hover {
 			opacity: 1;
 		}
+	}
+
+	role {
+		color: var(--color-blue);
 	}
 
 	date {
