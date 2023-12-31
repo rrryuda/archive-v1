@@ -149,12 +149,10 @@ hr {
 	line-height: 1.5em;
 	position: absolute;
 	display: inline-flex;
-	color: var(--color-white);
 
 	@media screen and (max-width: 1439px) {
 		z-index: -1;
 		width: 100%;
-		color: currentColor;
 	}
 }
 
@@ -163,12 +161,16 @@ hr {
 	align-items: flex-end;
 	right: calc(var(--unit) * 2);
 	bottom: calc(var(--unit) * 2);
+	color: var(--color-white);
+	filter: drop-shadow(0 0 2px var(--color-black));
 
 	@media screen and (max-width: 1439px) {
 		align-items: center;
 		top: calc(var(--unit) * 2);
 		right: 0;
 		bottom: auto;
+		color: currentColor;
+		filter: none;
 
 		#time {
 			display: none;
@@ -195,6 +197,7 @@ hr {
 	gap: .5rem;
 	bottom: calc(var(--unit) * 2);
 	left: calc(var(--unit) * 2);
+	color: var(--color-foreground-deep);
 
 	@media screen and (max-width: 1439px) {
 		align-items: center;
@@ -206,11 +209,6 @@ hr {
 	span {
 		text-align: center;
 		white-space: pre-wrap;
-		opacity: .32;
-
-		@media screen and (max-width: 1439px) {
-			opacity: .64;
-		}
 	}
 }
 
