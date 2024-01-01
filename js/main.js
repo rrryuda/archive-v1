@@ -1,4 +1,4 @@
-// Update Korea Time
+// Update korea time
 function updateKoreaTime() {
     const koreaTimeElement = document.getElementById("time");
     const now = new Date();
@@ -11,7 +11,7 @@ function updateKoreaTime() {
     koreaTimeElement.textContent = `Seoul, ${formattedTime}`;
 }
 
-// Update Activity
+// Update activity
 function updateActivity() {
     const activityElement = document.querySelector("#activity");
     const now = new Date();
@@ -70,7 +70,7 @@ setInterval(function () {
     }
 }, 1000);
 
-// Image Popup
+// Image popup
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth >= 1024) {
         const triggers = document.querySelectorAll(".trigger");
