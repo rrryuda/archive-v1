@@ -16,7 +16,6 @@
 				@media screen and (max-width: 767px) {
 					font-size: 2.5rem;
 					letter-spacing: -.05rem;
-					margin-bottom: calc(var(--unit) * 3);
 				}
 			}
 
@@ -101,10 +100,6 @@
 				@media screen and (max-width: 1023px) {
 					grid-column: 1 / -1;
 					margin-bottom: calc(var(--unit) * 3);
-				}
-
-				h3 {
-					margin-bottom: calc(var(--unit) * 1);
 				}
 			}
 
