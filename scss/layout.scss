@@ -24,6 +24,7 @@
 				grid-column: span 2;
 
 				li {
+					font-weight: 600;
 					margin-bottom: calc(var(--unit) * .25);
 
 					&:last-child {
@@ -87,25 +88,13 @@
 /* Content styles */
 #content {
 	section {
-
-		h1,
 		.cell {
 			grid-column: 2 / span 4;
 
 			@media screen and (max-width: 1023px) {
 				grid-column: 1 / -1;
 			}
-		}
 
-		h1 {
-			margin-bottom: calc(var(--unit) * 8);
-
-			@media screen and (max-width: 1439px) {
-				margin-bottom: calc(var(--unit) * 6);
-			}
-		}
-
-		.cell {
 			&:first-child {
 				grid-column: span 1;
 
@@ -136,6 +125,18 @@
 
 				@media screen and (max-width: 1439px) {
 					margin-bottom: calc(var(--unit) * 3);
+				}
+			}
+
+			h1 {
+				margin-bottom: calc(var(--unit) * 4);
+
+				@media screen and (max-width: 1439px) {
+					margin-bottom: calc(var(--unit) * 3);
+				}
+
+				@media screen and (max-width: 1023px) {
+					margin-bottom: calc(var(--unit) * 6);
 				}
 			}
 
