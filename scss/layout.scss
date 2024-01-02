@@ -106,18 +106,9 @@
 				h3 {
 					margin-bottom: calc(var(--unit) * 1);
 				}
-
-				ul {
-					li {
-						opacity: .4;
-
-						&:has(a:hover) {
-							opacity: 1;
-						}
-					}
-				}
 			}
 
+			h1,
 			p,
 			hr,
 			picture {
@@ -125,18 +116,6 @@
 
 				@media screen and (max-width: 1439px) {
 					margin-bottom: calc(var(--unit) * 3);
-				}
-			}
-
-			h1 {
-				margin-bottom: calc(var(--unit) * 4);
-
-				@media screen and (max-width: 1439px) {
-					margin-bottom: calc(var(--unit) * 3);
-				}
-
-				@media screen and (max-width: 1023px) {
-					margin-bottom: calc(var(--unit) * 6);
 				}
 			}
 
