@@ -11,8 +11,7 @@ p {
 
 h1,
 h2,
-h3,
-li {
+h3 {
 	font-weight: 600;
 
 	&:has(svg) {
@@ -73,14 +72,6 @@ h2 {
 
 h3 {
 	margin-bottom: calc(var(--unit) * .375);
-}
-
-li {
-	margin-bottom: calc(var(--unit) * .25);
-
-	&:last-child {
-		margin: 0;
-	}
 }
 
 p {

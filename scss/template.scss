@@ -9,6 +9,10 @@ main {
 	background: var(--color-background);
 	box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-background);
 
+	@media screen and (max-width: 1439px) {
+		padding: calc(var(--unit) * 8) calc(var(--unit) * 4);
+	}
+
 	@media screen and (max-width: 1023px) {
 		gap: calc(var(--unit) * 2);
 		padding: calc(var(--unit) * 6) calc(var(--unit) * 4);

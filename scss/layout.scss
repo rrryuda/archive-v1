@@ -23,11 +23,19 @@
 			ul {
 				grid-column: span 2;
 
-				a {
-					color: var(--color-red);
+				li {
+					margin-bottom: calc(var(--unit) * .25);
 
-					&:hover {
-						color: var(--color-select-foreground);
+					&:last-child {
+						margin: 0;
+					}
+
+					a {
+						color: var(--color-red);
+
+						&:hover {
+							color: var(--color-select-foreground);
+						}
 					}
 				}
 			}
@@ -80,12 +88,6 @@
 #content {
 	section {
 
-		/* Title & Navigation */
-		h1,
-		#back {
-			margin-bottom: calc(var(--unit) * 3);
-		}
-
 		h1,
 		.cell {
 			grid-column: 2 / span 4;
@@ -95,16 +97,37 @@
 			}
 		}
 
-		#back {
-			align-items: flex-start;
-			grid-column: span 1;
+		h1 {
+			margin-bottom: calc(var(--unit) * 8);
 
-			@media screen and (max-width: 1023px) {
-				grid-column: 1 / -1;
+			@media screen and (max-width: 1439px) {
+				margin-bottom: calc(var(--unit) * 6);
 			}
 		}
 
 		.cell {
+			&:first-child {
+				grid-column: span 1;
+
+				@media screen and (max-width: 1023px) {
+					grid-column: 1 / -1;
+					margin-bottom: calc(var(--unit) * 3);
+				}
+
+				h3 {
+					margin-bottom: calc(var(--unit) * 1);
+				}
+
+				ul {
+					li {
+						opacity: .4;
+
+						&:has(a:hover) {
+							opacity: 1;
+						}
+					}
+				}
+			}
 
 			p,
 			hr,
