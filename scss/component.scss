@@ -130,7 +130,7 @@ hr {
 	position: absolute;
 	display: inline-flex;
 
-	@media screen and (max-width: 1439px) {
+	@media screen and (max-width: 1440px) {
 		z-index: -1;
 		width: 100%;
 	}
@@ -144,7 +144,7 @@ hr {
 	color: var(--color-white);
 	filter: drop-shadow(0 0 2px var(--color-black));
 
-	@media screen and (max-width: 1439px) {
+	@media screen and (max-width: 1440px) {
 		align-items: center;
 		top: calc(var(--unit) * 2);
 		right: 0;
@@ -179,7 +179,7 @@ hr {
 	left: calc(var(--unit) * 2);
 	color: var(--color-foreground-deep);
 
-	@media screen and (max-width: 1439px) {
+	@media screen and (max-width: 1440px) {
 		align-items: center;
 		top: auto;
 		left: 0;
@@ -215,7 +215,7 @@ hr {
 		-webkit-animation: rotation 1s linear infinite;
 		animation: rotation 1s linear infinite;
 
-		@media screen and (max-width: 1439px) {
+		@media screen and (max-width: 1440px) {
 			border-color: currentColor;
 			border-bottom-color: transparent;
 		}

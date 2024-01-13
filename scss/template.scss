@@ -9,16 +9,16 @@ main {
 	background: var(--color-background);
 	box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-background);
 
-	@media screen and (max-width: 1439px) {
+	@media screen and (max-width: 1440px) {
 		padding: calc(var(--unit) * 8) calc(var(--unit) * 4);
 	}
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: 1024px) {
 		gap: calc(var(--unit) * 2);
 		padding: calc(var(--unit) * 6) calc(var(--unit) * 4);
 	}
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		gap: 0;
 	}
 
@@ -34,15 +34,15 @@ section {
 	gap: calc(var(--unit) * 4);
 	padding: calc(var(--unit) * 4) 0;
 
-	@media screen and (max-width: 1439px) {
+	@media screen and (max-width: 1440px) {
 		gap: calc(var(--unit) * 3);
 	}
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: 1024px) {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
@@ -60,11 +60,11 @@ section {
 			grid-template-columns: repeat(2, 1fr);
 			gap: calc(var(--unit) * 4);
 
-			@media screen and (max-width: 1439px) {
+			@media screen and (max-width: 1440px) {
 				gap: calc(var(--unit) * 3);
 			}
 
-			@media screen and (max-width: 1023px) {
+			@media screen and (max-width: 1024px) {
 				grid-template-columns: 100%;
 			}
 		}

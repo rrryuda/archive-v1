@@ -30,11 +30,11 @@
 	/* Spacer */
 	--unit: 16px;
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: 1024px) {
 		--unit: 14px;
 	}
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		--unit: 12px;
 	}
 }
@@ -119,7 +119,7 @@ html {
 	-ms-text-size-adjust: none;
 	-o-text-size-adjust: none;
 
-	@media screen and (max-width: 1439px) {
+	@media screen and (max-width: 1440px) {
 		background: var(--color-background-deep);
 	}
 }
