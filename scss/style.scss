@@ -2,24 +2,24 @@
 :root {
 	/* Color theme */
 	--color-white: rgba(255, 255, 255, 1);
-	--color-red: rgba(232, 48, 56, 1);
 	--color-black: rgba(32, 32, 32, 1);
+	--color-highlight: rgb(4, 190, 196, 1);
 	--color-foreground: rgba(0, 0, 0, 1);
-	--color-foreground-deep: rgba(125, 125, 125, 1);
+	--color-foreground-dimmed: rgba(125, 125, 125, 1);
 	--color-background: rgba(255, 255, 255, 1);
-	--color-background-deep: rgba(240, 240, 240, 1);
+	--color-background-dimmed: rgba(240, 240, 240, 1);
 	--color-select-foreground: rgba(255, 255, 255, 1);
 	--color-select-background: rgba(0, 0, 0, 1);
 
 	/* Color theme (dark) */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
-		--color-red: rgba(248, 72, 80, 1);
 		--color-black: rgba(16, 16, 16, 1);
+		--color-highlight: rgba(20, 210, 214, 1);
 		--color-foreground: rgba(240, 240, 240, 1);
-		--color-foreground-deep: rgba(125, 125, 125, 1);
+		--color-foreground-dimmed: rgba(125, 125, 125, 1);
 		--color-background: rgba(40, 40, 40, 1);
-		--color-background-deep: rgba(28, 28, 28, 1);
+		--color-background-dimmed: rgba(28, 28, 28, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(255, 255, 255, 1);
 	}
@@ -103,7 +103,7 @@ li {
 /* Html */
 html {
 	overflow: hidden;
-	font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+	font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	word-break: keep-all;
@@ -119,8 +119,12 @@ html {
 	-ms-text-size-adjust: none;
 	-o-text-size-adjust: none;
 
+	/* Font smoothing */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
+
 	@media screen and (max-width: 1440px) {
-		background: var(--color-background-deep);
+		background: var(--color-background-dimmed);
 	}
 }
 

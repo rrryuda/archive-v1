@@ -80,7 +80,7 @@ p {
 		font-size: .875rem;
 		font-weight: 500;
 		margin-top: calc(var(--unit) * .75);
-		opacity: .5;
+		opacity: .4;
 	}
 
 	strong,
@@ -89,8 +89,8 @@ p {
 	}
 
 	a,
-	date {
-		opacity: .5;
+	yr {
+		opacity: .4;
 	}
 
 	a {
@@ -178,7 +178,7 @@ hr {
 	gap: .5rem;
 	bottom: calc(var(--unit) * 2);
 	left: calc(var(--unit) * 2);
-	color: var(--color-foreground-deep);
+	color: var(--color-foreground-dimmed);
 
 	@media screen and (max-width: 1440px) {
 		align-items: center;

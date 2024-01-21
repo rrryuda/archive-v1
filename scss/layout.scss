@@ -34,11 +34,15 @@
 					}
 
 					a {
-						color: var(--color-red);
+						color: var(--color-highlight);
 
 						&:hover {
 							color: var(--color-select-foreground);
 						}
+					}
+
+					dimmed {
+						opacity: .4;
 					}
 				}
 			}
@@ -74,8 +78,16 @@
 				}
 
 				p {
+					&:has(yr) {
+						grid-column: 1/-1;
+					}
+
+					yr {
+						font-weight: 600;
+					}
+
 					role {
-						color: var(--color-red);
+						color: var(--color-highlight);
 					}
 				}
 			}
@@ -114,10 +126,13 @@
 
 					li {
 						a {
-							font-weight: 400;
-							opacity: .5;
+							font-weight: 500;
+							opacity: .4;
 
 							&:hover {
+								color: var(--color-foreground);
+								background: none;
+								box-shadow: none;
 								opacity: 1;
 							}
 
@@ -152,7 +167,7 @@
 					padding: calc(var(--unit) * 1.25);
 					color: var(--color-white);
 					background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-					opacity: .5;
+					opacity: .4;
 				}
 			}
 
@@ -163,7 +178,7 @@
 			/* Experience */
 			&#experience {
 				a {
-					color: var(--color-red);
+					color: var(--color-highlight);
 
 					&:hover {
 						color: var(--color-select-foreground);
