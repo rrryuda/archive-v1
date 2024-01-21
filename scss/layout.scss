@@ -27,7 +27,6 @@
 				grid-column: span 2;
 
 				li {
-					font-weight: 600;
 					margin-bottom: calc(var(--unit) * .25);
 
 					&:last-child {
@@ -105,6 +104,19 @@
 					grid-column: 1 / -1;
 					margin-bottom: calc(var(--unit) * 3);
 				}
+
+				li {
+					a {
+						font-weight: 400;
+						opacity: .5;
+
+						&:hover {
+							font-weight: 600;
+							opacity: 1;
+						}
+
+					}
+				}
 			}
 
 			h1,
@@ -119,7 +131,7 @@
 			}
 
 			h2 {
-				margin-bottom: calc(var(--unit) * 1);
+				margin-bottom: var(--unit);
 			}
 
 			picture {
@@ -133,7 +145,7 @@
 					padding: calc(var(--unit) * 1.25);
 					color: var(--color-white);
 					background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-					opacity: .64;
+					opacity: .5;
 				}
 			}
 
@@ -148,19 +160,6 @@
 
 					&:hover {
 						color: var(--color-select-foreground);
-					}
-				}
-
-				div:last-child {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					gap: calc(var(--unit) * 1.5);
-					width: 100%;
-
-					picture {
-						width: 48px;
-						margin: 0;
 					}
 				}
 			}

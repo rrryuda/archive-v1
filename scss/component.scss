@@ -11,7 +11,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+li {
 	font-weight: 600;
 
 	&:has(svg) {
@@ -70,7 +71,8 @@ h2 {
 	line-height: 1.5em;
 }
 
-h3 {
+h3,
+li {
 	margin-bottom: calc(var(--unit) * .375);
 }
 
@@ -79,7 +81,7 @@ p {
 		font-size: .875rem;
 		font-weight: 500;
 		margin-top: calc(var(--unit) * .75);
-		opacity: .4;
+		opacity: .5;
 	}
 
 	strong,
@@ -89,7 +91,7 @@ p {
 
 	a,
 	date {
-		opacity: .4;
+		opacity: .5;
 	}
 
 	a {
