@@ -61,11 +61,16 @@
 					@media screen and (max-width: 768px) {
 						margin-bottom: calc(var(--unit) * 5);
 					}
+
+					div:last-child {
+						:last-child {
+							margin: 0;
+						}
+					}
 				}
 
 				h2,
-				hr,
-				.column {
+				hr {
 					margin-bottom: calc(var(--unit) * 4);
 
 					@media screen and (max-width: 1440px) {
