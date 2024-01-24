@@ -88,16 +88,17 @@ p {
 		font-weight: 600;
 	}
 
-	a,
-	date {
-		opacity: .4;
-	}
-
 	a {
+		opacity: .4;
+
 		&:hover {
 			opacity: 1;
 		}
 	}
+}
+
+dimmed {
+	opacity: .4;
 }
 
 /* Divider */
