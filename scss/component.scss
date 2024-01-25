@@ -13,8 +13,6 @@ h1,
 h2,
 h3,
 li {
-	font-weight: 600;
-
 	&:has(svg) {
 		display: inline-flex;
 		align-items: center;
@@ -26,6 +24,12 @@ li {
 			fill: currentColor;
 		}
 	}
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
 }
 
 h3,
@@ -75,10 +79,14 @@ h3 {
 	margin-bottom: calc(var(--unit) * .375);
 }
 
+li {
+	font-weight: 600;
+}
+
 p {
 	&.caption {
 		font-size: .875rem;
-		font-weight: 500;
+		font-weight: 600;
 		margin-top: calc(var(--unit) * .75);
 		opacity: .4;
 	}
