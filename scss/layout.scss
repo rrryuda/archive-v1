@@ -75,6 +75,12 @@
 					p {
 						margin-bottom: calc(var(--unit) * 2);
 					}
+
+					.button {
+						&:first-child {
+							margin-bottom: var(--unit);
+						}
+					}
 				}
 
 				h2,
