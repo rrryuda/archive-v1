@@ -2,7 +2,6 @@
 main {
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--unit) * 4);
 	max-width: var(--body);
 	padding: calc(var(--unit) * 8);
 	margin: 0 auto;
@@ -14,12 +13,7 @@ main {
 	}
 
 	@media screen and (max-width: 1024px) {
-		gap: calc(var(--unit) * 2);
 		padding: calc(var(--unit) * 6) calc(var(--unit) * 4);
-	}
-
-	@media screen and (max-width: 768px) {
-		gap: 0;
 	}
 
 	@media screen and (max-width: 644px) {
