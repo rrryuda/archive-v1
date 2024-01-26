@@ -17,12 +17,6 @@
 						margin-bottom: calc(var(--unit) * 2);
 					}
 
-					h1 {
-						name {
-							text-wrap: nowrap;
-						}
-					}
-
 					p {
 						font-size: 1.375rem;
 						font-weight: 500;
@@ -50,7 +44,7 @@
 
 				/* Portrait */
 				img {
-					filter: brightness(115%);
+					border-radius: .125rem;
 				}
 			}
 		}
