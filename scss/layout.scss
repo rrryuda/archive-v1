@@ -26,14 +26,13 @@
 					ul {
 						li {
 							margin-bottom: calc(var(--unit) * .25);
+							color: var(--color-foreground-dimmed);
 
 							&:last-child {
 								margin: 0;
 							}
 
 							a {
-								color: var(--color-highlight);
-
 								&:hover {
 									color: var(--color-select-foreground);
 								}
@@ -102,12 +101,6 @@
 
 					&:last-child {
 						margin: 0;
-					}
-				}
-
-				p {
-					role {
-						color: var(--color-highlight);
 					}
 				}
 			}
@@ -199,8 +192,6 @@
 			/* Experience */
 			&#experience {
 				a {
-					color: var(--color-highlight);
-
 					&:hover {
 						color: var(--color-select-foreground);
 					}
