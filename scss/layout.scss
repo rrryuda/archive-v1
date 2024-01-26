@@ -48,9 +48,10 @@
 			}
 		}
 
-		/* Project */
 		&:nth-child(2) {
 			.cell {
+
+				/* Project */
 				&:first-child {
 					grid-column: span 4;
 
@@ -66,6 +67,13 @@
 						:last-child {
 							margin: 0;
 						}
+					}
+				}
+
+				/* About */
+				&:nth-child(2) {
+					p {
+						margin-bottom: calc(var(--unit) * 2);
 					}
 				}
 
@@ -106,6 +114,7 @@
 				grid-column: 1 / -1;
 			}
 
+			/* Navigation */
 			&:first-child {
 				grid-column: span 1;
 

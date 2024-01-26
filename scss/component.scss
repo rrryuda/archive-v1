@@ -43,7 +43,7 @@ p {
 		&:hover {
 			color: var(--color-select-foreground);
 			background: var(--color-select-background);
-			border-radius: .25rem;
+			border-radius: .125rem;
 			box-shadow:
 				-.25rem 0 0 0 var(--color-select-background),
 				.25rem 0 0 0 var(--color-select-background);
@@ -116,6 +116,22 @@ hr {
 	background: currentColor;
 }
 
+/* Buttons */
+.button {
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: -.0125rem;
+	line-height: 1.5em;
+	padding: calc(var(--unit) * 1) calc(var(--unit) * 1.25);
+	background: var(--color-foreground-tint);
+	border-radius: .125rem;
+
+	&:hover {
+		color: var(--color-select-foreground);
+		background: var(--color-select-background);
+	}
+}
+
 /* Image Popup */
 .popup {
 	position: fixed;
@@ -123,7 +139,7 @@ hr {
 	display: none;
 	z-index: 999;
 	max-width: calc(var(--unit) * 8);
-	border-radius: .25rem;
+	border-radius: .125rem;
 	box-shadow: 0 1px 3px 2px rgba(0, 0, 0, .16);
 
 	&.-s {

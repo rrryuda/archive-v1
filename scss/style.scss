@@ -6,6 +6,7 @@
 	--color-highlight: rgb(4, 190, 196, 1);
 	--color-foreground: rgba(0, 0, 0, 1);
 	--color-foreground-dimmed: rgba(125, 125, 125, 1);
+	--color-foreground-tint: rgba(0, 0, 0, .1);
 	--color-background: rgba(255, 255, 255, 1);
 	--color-background-dimmed: rgba(240, 240, 240, 1);
 	--color-select-foreground: rgba(255, 255, 255, 1);
@@ -18,6 +19,7 @@
 		--color-highlight: rgba(20, 210, 214, 1);
 		--color-foreground: rgba(240, 240, 240, 1);
 		--color-foreground-dimmed: rgba(125, 125, 125, 1);
+		--color-foreground-tint: rgba(240, 240, 240, .2);
 		--color-background: rgba(40, 40, 40, 1);
 		--color-background-dimmed: rgba(28, 28, 28, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
