@@ -1,10 +1,10 @@
 /* Home styles */
 #home {
 	section {
-
-		/* Intro */
 		&:first-child {
 			.cell {
+
+				/* Intro */
 				&:first-child {
 					grid-column: span 4;
 
@@ -48,6 +48,7 @@
 					}
 				}
 
+				/* Portrait */
 				img {
 					filter: brightness(115%);
 				}
