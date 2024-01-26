@@ -76,9 +76,15 @@
 						margin-bottom: calc(var(--unit) * 2);
 					}
 
-					.button {
-						&:first-child {
-							margin-bottom: var(--unit);
+					div {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+
+						.button {
+							&:first-child {
+								margin-bottom: calc(var(--unit) * .75);
+							}
 						}
 					}
 				}
