@@ -1,93 +1,88 @@
 /* Home styles */
 #home {
 	section {
-		&:first-child {
-			.cell {
+		.cell {
 
-				/* Intro */
-				&:first-child {
-					grid-column: span 4;
+			/* Title */
+			&:first-child {
+				grid-column: 1 / -1;
+			}
 
-					@media screen and (max-width: 1024px) {
-						grid-column: span 2;
-					}
+			&:nth-child(2),
+			&:nth-child(4) {
+				grid-column: span 4;
 
-					h1,
-					p {
-						margin-bottom: calc(var(--unit) * 2);
-					}
+				@media screen and (max-width: 1024px) {
+					grid-column: span 2;
+				}
+			}
 
-					p {
-						font-size: 1.5rem;
-						font-weight: 600;
-					}
+			/* Bio */
+			&:nth-child(2) {
+				p {
+					font-size: 1.5rem;
+					font-weight: 600;
+					margin-bottom: calc(var(--unit) * 2);
+				}
 
-					ul {
-						li {
-							margin-bottom: calc(var(--unit) * .25);
-							color: var(--color-foreground-dimmed);
+				ul {
+					li {
+						margin-bottom: calc(var(--unit) * .25);
+						color: var(--color-foreground-dimmed);
 
-							&:last-child {
-								margin: 0;
-							}
+						&:last-child {
+							margin: 0;
+						}
 
-							a {
-								&:hover {
-									color: var(--color-select-foreground);
-								}
+						a {
+							&:hover {
+								color: var(--color-select-foreground);
 							}
 						}
 					}
 				}
 			}
-		}
 
-		&:nth-child(2) {
-			.cell {
-
-				/* Project */
-				&:first-child {
-					grid-column: span 4;
-
-					@media screen and (max-width: 1024px) {
-						grid-column: span 2;
-					}
+			/* Portrait */
+			&:nth-child(3) {
+				picture {
+					padding: 0 var(--unit);
 
 					@media screen and (max-width: 768px) {
-						margin-bottom: calc(var(--unit) * 5);
-					}
-
-					div:last-child {
-						:last-child {
-							margin: 0;
-						}
+						padding: 0;
 					}
 				}
+			}
 
-				/* About */
-				&:nth-child(2) {
-					p {
-						margin-bottom: calc(var(--unit) * 2);
-					}
-				}
-
-				h2,
-				hr {
-					margin-bottom: calc(var(--unit) * 4);
-
-					@media screen and (max-width: 1440px) {
-						margin-bottom: calc(var(--unit) * 3);
-					}
-
-					&:last-child {
+			/* Project */
+			&:nth-child(4) {
+				div:last-child {
+					:last-child {
 						margin: 0;
 					}
 				}
 			}
-		}
 
-		.cell {
-			grid-column: span 2;
+			/* About */
+			&:nth-child(5) {
+				p {
+					margin-bottom: calc(var(--unit) * 2);
+				}
+			}
+
+			h1,
+			h2,
+			hr {
+				margin-bottom: calc(var(--unit) * 4);
+
+				@media screen and (max-width: 1440px) {
+					margin-bottom: calc(var(--unit) * 3);
+				}
+
+				&:last-child {
+					margin: 0;
+				}
+			}
 		}
 	}
 }

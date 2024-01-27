@@ -8,12 +8,12 @@
 		--color-foreground-dimmed: rgba(0, 0, 0, .4);
 		--color-foreground-tint: rgba(0, 0, 0, .1);
 		--color-background: rgba(255, 255, 255, 1);
-		--color-html: rgba(32, 32, 32, 1);
+		--color-html: rgba(255, 255, 255, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(20, 210, 214, 1);
 
-		@media screen and (max-width: 1440px) {
-			--color-html: rgba(255, 255, 255, 1);
+		@media screen and (min-width: 1920px) {
+			--color-html: rgba(32, 32, 32, 1);
 		}
 	}
 
@@ -23,13 +23,13 @@
 		--color-foreground: rgba(255, 255, 255, 1);
 		--color-foreground-dimmed: rgba(255, 255, 255, .5);
 		--color-foreground-tint: rgba(255, 255, 255, .15);
-		--color-background: rgba(40, 40, 40, 1);
+		--color-background: rgba(0, 0, 0, 1);
 		--color-html: rgba(0, 0, 0, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(20, 210, 214, 1);
 
-		@media screen and (max-width: 1440px) {
-			--color-background: rgba(0, 0, 0, 1);
+		@media screen and (min-width: 1920px) {
+			--color-html: rgba(32, 32, 32, 1);
 		}
 	}
 

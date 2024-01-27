@@ -43,6 +43,7 @@ section {
 	.cell {
 		display: flex;
 		flex-direction: column;
+		grid-column: span 2;
 		align-items: flex-start;
 
 		&.-f {

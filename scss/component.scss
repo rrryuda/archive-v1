@@ -230,15 +230,14 @@ hr {
 		box-sizing: border-box;
 		width: 48px;
 		height: 48px;
-		border: 5px solid var(--color-white);
+		border: 5px solid currentColor;
 		border-bottom-color: transparent;
 		border-radius: 50%;
 		-webkit-animation: rotation 1s linear infinite;
 		animation: rotation 1s linear infinite;
 
-		@media screen and (max-width: 1440px) {
-			border-color: currentColor;
-			border-bottom-color: transparent;
+		@media screen and (min-width: 1920px) {
+			border-color: var(--color-white);
 		}
 	}
 }
