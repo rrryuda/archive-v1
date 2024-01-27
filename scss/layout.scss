@@ -51,6 +51,10 @@
 					@media screen and (max-width: 768px) {
 						padding: 0;
 					}
+
+					img {
+						filter: contrast(125%);
+					}
 				}
 			}
 
