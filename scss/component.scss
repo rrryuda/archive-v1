@@ -29,7 +29,7 @@ li {
 h1,
 h2,
 h3 {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 h3,
@@ -135,7 +135,6 @@ hr {
 /* Image Popup */
 .popup {
 	position: fixed;
-	overflow: hidden;
 	display: none;
 	z-index: 999;
 	max-width: calc(var(--unit) * 8);
@@ -153,12 +152,11 @@ hr {
 	font-weight: 500;
 	letter-spacing: -.0125rem;
 	line-height: 1.5em;
-	position: absolute;
-	display: inline-flex;
+	position: fixed;
+	display: none;
 
-	@media screen and (max-width: 1440px) {
-		z-index: -1;
-		width: 100%;
+	@media screen and (min-width: 1920px) {
+		display: inline-flex;
 	}
 }
 
@@ -169,19 +167,6 @@ hr {
 	bottom: calc(var(--unit) * 2);
 	color: var(--color-white);
 	filter: drop-shadow(0 0 2px var(--color-black));
-
-	@media screen and (max-width: 1440px) {
-		align-items: center;
-		top: calc(var(--unit) * 2);
-		right: 0;
-		bottom: auto;
-		color: currentColor;
-		filter: none;
-
-		#time {
-			display: none;
-		}
-	}
 
 	#time,
 	#activity {
@@ -205,13 +190,6 @@ hr {
 	left: calc(var(--unit) * 2);
 	color: var(--color-foreground-dimmed);
 
-	@media screen and (max-width: 1440px) {
-		align-items: center;
-		top: auto;
-		left: 0;
-		bottom: calc(var(--unit) * 2);
-	}
-
 	span {
 		text-align: center;
 		white-space: pre-wrap;
@@ -220,7 +198,7 @@ hr {
 
 /* Loader */
 .loader {
-	position: absolute;
+	position: fixed;
 	z-index: -1;
 	display: flex;
 	align-items: center;

@@ -7,7 +7,6 @@
 	--color-foreground-dimmed: rgba(125, 125, 125, 1);
 	--color-foreground-tint: rgba(0, 0, 0, .1);
 	--color-background: rgba(255, 255, 255, 1);
-	--color-background-dimmed: rgba(240, 240, 240, 1);
 	--color-select-foreground: rgba(0, 0, 0, 1);
 	--color-select-background: rgba(20, 210, 214, 1);
 
@@ -19,7 +18,6 @@
 		--color-foreground-dimmed: rgba(125, 125, 125, 1);
 		--color-foreground-tint: rgba(240, 240, 240, .15);
 		--color-background: rgba(40, 40, 40, 1);
-		--color-background-dimmed: rgba(28, 28, 28, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(20, 210, 214, 1);
 	}
@@ -71,17 +69,14 @@ iframe {
 	box-sizing: border-box;
 }
 
-svg {
-	flex-shrink: 0;
-	fill: currentColor;
-}
-
 picture,
 img,
 video,
 iframe {
 	display: block;
 	width: 100%;
+	border-radius: .125rem;
+	overflow: hidden;
 }
 
 video,
@@ -100,16 +95,19 @@ li {
 	list-style: none;
 }
 
+svg {
+	flex-shrink: 0;
+	fill: currentColor;
+}
+
 /* Html */
 html {
-	overflow: hidden;
 	font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	word-break: keep-all;
 	font-display: fallback;
 	-webkit-font-display: fallback;
-	height: 100%;
 	color: var(--color-foreground);
 	background: var(--color-black);
 
@@ -124,14 +122,11 @@ html {
 	-moz-osx-font-smoothing: auto;
 
 	@media screen and (max-width: 1440px) {
-		background: var(--color-background-dimmed);
+		background: var(--color-background);
 	}
 }
 
 body {
-	overflow: auto;
-	height: 100%;
-
 	&.loading {
 
 		main,
