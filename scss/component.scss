@@ -106,18 +106,35 @@ p {
 }
 
 dimmed {
-	opacity: .4;
+	color: var(--color-foreground-dimmed);
 }
 
 /* Divider */
 hr {
 	width: 100%;
-	height: 2px;
-	background: currentColor;
+	height: 1px;
+	background: var(--color-foreground-dimmed);
 }
 
 /* Buttons */
-.button {
+.btns {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: calc(var(--unit) * .75);
+
+	@media screen and (max-width: 768px) {
+		flex-direction: row;
+	}
+
+	&.-r {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.btn {
 	font-size: 1rem;
 	font-weight: 600;
 	letter-spacing: -.0125rem;
@@ -166,7 +183,6 @@ hr {
 	right: calc(var(--unit) * 2);
 	bottom: calc(var(--unit) * 2);
 	color: var(--color-white);
-	filter: drop-shadow(0 0 2px var(--color-black));
 
 	#time,
 	#activity {
@@ -188,11 +204,12 @@ hr {
 	gap: .5rem;
 	bottom: calc(var(--unit) * 2);
 	left: calc(var(--unit) * 2);
-	color: var(--color-foreground-dimmed);
+	color: var(--color-white);
 
 	span {
 		text-align: center;
 		white-space: pre-wrap;
+		opacity: .4;
 	}
 }
 

@@ -1,25 +1,36 @@
 /* Variables */
 :root {
+
 	/* Color theme */
-	--color-white: rgba(255, 255, 255, 1);
-	--color-black: rgba(32, 32, 32, 1);
-	--color-foreground: rgba(0, 0, 0, 1);
-	--color-foreground-dimmed: rgba(125, 125, 125, 1);
-	--color-foreground-tint: rgba(0, 0, 0, .1);
-	--color-background: rgba(255, 255, 255, 1);
-	--color-select-foreground: rgba(0, 0, 0, 1);
-	--color-select-background: rgba(20, 210, 214, 1);
+	@media (prefers-color-scheme: light) {
+		--color-white: rgba(255, 255, 255, 1);
+		--color-foreground: rgba(0, 0, 0, 1);
+		--color-foreground-dimmed: rgba(0, 0, 0, .4);
+		--color-foreground-tint: rgba(0, 0, 0, .1);
+		--color-background: rgba(255, 255, 255, 1);
+		--color-html: rgba(32, 32, 32, 1);
+		--color-select-foreground: rgba(0, 0, 0, 1);
+		--color-select-background: rgba(20, 210, 214, 1);
+
+		@media screen and (max-width: 1440px) {
+			--color-html: rgba(255, 255, 255, 1);
+		}
+	}
 
 	/* Color theme (dark) */
 	@media (prefers-color-scheme: dark) {
 		--color-white: rgba(255, 255, 255, 1);
-		--color-black: rgba(16, 16, 16, 1);
-		--color-foreground: rgba(240, 240, 240, 1);
-		--color-foreground-dimmed: rgba(125, 125, 125, 1);
-		--color-foreground-tint: rgba(240, 240, 240, .15);
+		--color-foreground: rgba(255, 255, 255, 1);
+		--color-foreground-dimmed: rgba(255, 255, 255, .5);
+		--color-foreground-tint: rgba(255, 255, 255, .15);
 		--color-background: rgba(40, 40, 40, 1);
+		--color-html: rgba(0, 0, 0, 1);
 		--color-select-foreground: rgba(0, 0, 0, 1);
 		--color-select-background: rgba(20, 210, 214, 1);
+
+		@media screen and (max-width: 1440px) {
+			--color-background: rgba(0, 0, 0, 1);
+		}
 	}
 
 	/* Width */
@@ -79,11 +90,6 @@ iframe {
 	overflow: hidden;
 }
 
-video,
-iframe {
-	background: var(--color-black);
-}
-
 a {
 	cursor: pointer;
 	display: inline-block;
@@ -102,14 +108,14 @@ svg {
 
 /* Html */
 html {
-	font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+	font-family: "Inter", "Helvetica", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	word-break: keep-all;
 	font-display: fallback;
 	-webkit-font-display: fallback;
 	color: var(--color-foreground);
-	background: var(--color-black);
+	background: var(--color-html);
 
 	/* Text size */
 	-webkit-text-size-adjust: none;
