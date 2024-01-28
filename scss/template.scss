@@ -5,8 +5,11 @@ main {
 	max-width: var(--body);
 	padding: calc(var(--unit) * 8);
 	margin: 0 auto;
-	background: var(--color-background);
-	box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-background);
+
+	@media screen and (min-width: 1920px) {
+		background: var(--color-background);
+		box-shadow: 0 0 0 calc(var(--unit) * 4) var(--color-background);
+	}
 
 	@media screen and (max-width: 1440px) {
 		padding: calc(var(--unit) * 8) calc(var(--unit) * 4);
